@@ -5,7 +5,7 @@
  */
  body{letter-spacing:.0625em} /*font-family:'EB Garamond',serif*/
  ul,li,p{font-family:'Baskervville',serif}
-a,button, h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
+a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
 /* @media "mobile-first", 放在default style的下面*/
  #mainNav{min-height:30px !important;background-color:#fff} /* min-height:50px background-color:rgba(255,255,255,0)*/
  #navContainer{padding:0px}
@@ -72,7 +72,7 @@ a,button, h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
  #NaplesHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.1) 0,rgba(92,77,66,0.7) 85%,rgb(41, 33, 28) 100%),url(../img/NaplesPic/NaplesHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #CapriHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.1) 0,rgba(92,77,66,0.6) 80%,rgb(41, 33, 28) 100%),url(../img/CapriPic/CapriHeader4.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #RomeHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.2) 0,rgba(92,77,66,0.4) 80%,rgb(41, 33, 28) 100%),url(../img/RomePic/RomeHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
- .masthead h2{font-family: 'Alegreya', serif!important;max-width:20rem;font-size:1rem;text-shadow:1px 1px 4px rgba(0, 0, 0, 0.6);color:rgb(235, 235, 235)}
+ .masthead h2,#NaplesHead h2,#CapriHead h2,#RomeHead h2{font-family: 'Alegreya', serif!important;max-width:20rem;font-size:1rem;text-shadow:1px 1px 4px rgba(0, 0, 0, 0.6);color:rgb(235, 235, 235)}
  .masthead h1{font-family: 'Vesper Libre', serif!important;font-size:3rem;line-height:3rem;letter-spacing:.8rem; color:#ff8c09;text-shadow: 1px 1px 4px rgba(92, 77, 66, 0.8);}
  #cityPageTitle{width:600px}
  /*.masthead h2{color:white;}*/
@@ -81,7 +81,7 @@ a,button, h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
  .masthead h1{font-size:6.5rem;line-height:6.5rem;letter-spacing:.8rem}
  .masthead h2{max-width:30rem;font-size:1.25rem;}}
  /* ShowMe button */
- .btn {box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;padding:1.25rem 2rem;font-family:'Nunito';font-size:80%;text-transform:uppercase;letter-spacing:.15rem;border:0}
+ .btn {box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;padding:1.25rem 2rem;font-size:80%;text-transform:uppercase;letter-spacing:.15rem;border:0}
  .btn-primary{background-color:#e27a02}
  .btn-primary:hover{background-color:#d15006e8}
  .btn-primary:active{background-color:#e45603e8!important} 

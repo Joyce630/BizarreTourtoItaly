@@ -13,7 +13,7 @@ var arrow = L.icon({
     popupAnchor: [0,-15]});
 var blue= L.icon({
     iconUrl: 'img/Mapmark2.svg',  //.svg change the details in AI
-    iconSize: [30, 40], // size of the icon
+    iconSize: [25, 35], // size of the icon
     popupAnchor: [0,-15]});
 var orange = L.icon({
     iconUrl: 'img/Tea4.svg',
