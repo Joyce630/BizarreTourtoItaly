@@ -98,12 +98,12 @@
     .home-intro-section img{width:50%;height:50%}}
 
 /* city page intro section */
-.intro-section{padding:4rem 4rem 1rem 4rem;margin-left:auto;margin-right:auto;max-width:50rem;}  /* background-color:#ff8c09!important */
+.intro-section{padding:4rem 1rem 1rem 1.4rem;margin-left:auto;margin-right:auto;max-width:50rem;}  /* background-color:#ff8c09!important */
 .intro-section .featured-text{padding:1rem}
 .featured-text .text-center .text-lg-left{padding-bottom:0rem}
 .intro-section .intro-text{padding:3rem;font-size:90%}
-#cityWelcomeh4 {position: absolute;padding:10px;margin:10px;border-bottom:2px solid #da0909}
-.intro-section .cityIntroduction{margin-top:50px}
+#cityWelcomeh4 {position: relative;padding:10px;margin:10px;border-bottom:2px solid #da0909}  /* position: absolute, look strange in safari, so change to relative */
+.intro-section .cityIntroduction{margin-top:50px;}
 .intro-section .cityIntroduction h6{font-weight:700}
 /* intro section> 992px, */
 @media(min-width:992px){
