@@ -3,7 +3,9 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
- body{font-family:Nunito;letter-spacing:.0625em}
+ body{letter-spacing:.0625em} /*font-family:'EB Garamond',serif*/
+ ul,li,p{font-family:'Baskervville',serif}
+a,button, h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
 /* @media "mobile-first", 放在default style的下面*/
  #mainNav{min-height:30px !important;background-color:#fff} /* min-height:50px background-color:rgba(255,255,255,0)*/
  #navContainer{padding:0px}
@@ -11,7 +13,7 @@
 
 
  /* toggler: menu button*/
- #mainNav .navbar-toggler{font-size:75%;padding:.4rem;margin-right: 1rem;color:#f35b00;border:1px solid #f35b00;font-weight:700;}
+ #mainNav .navbar-toggler{font-size:75%;padding:.4rem;margin-right: 0.2rem;color:#f35b00;border:1px solid #f35b00;font-weight:700;}
  #mainNav .navbar-toggler:focus{outline:0;}
 
  #mainNav .navbar-collapse .nav-item .nav-link:hover{background-color: #fff7f1;color:#f35b00}
@@ -47,13 +49,13 @@
    #mainNav.navbar-shrink{background-color:#fff;padding:5px auto;}
  }
  #mainNav .nav-link .js-scroll-trigger:focus,#mainNav .nav-link .js-scroll-trigger:hover{text-decoration:none;color:#e45603;background-color: #fff7f1} 
- #mainNav #navbarResponsive ul{font-size:14px}
-    @media(min-width:576px){#mainNav #navbarResponsive ul{font-size:10px}}
+ #mainNav #navbarResponsive ul{font-size:12px}
+    @media(min-width:576px){#mainNav #navbarResponsive ul{font-size:18px}}
 
 /* breadcrumb */
 #mainNav ul.breadcrumb {margin-top: 0px;margin-bottom:0px;padding:0rem 0.5rem!important;list-style: none;background-color:rgba(0,0,0,0)}
 #mainNav ul.breadcrumb li {display: inline;font-size: 12px;color:#fff;text-shadow:none;font-weight:700}
-#mainNav ul.breadcrumb li+li:before {padding: 0px;color: #f35b00;content: "/\00a0";}
+#mainNav ul.breadcrumb li+li:before {padding: 0px;color: #f35b00;content: "/\00a0";font-family:'EB Garamond',serif}
  @media (min-width:576px){#mainNav ul.breadcrumb li+li:before{padding: 8px;}}
 #mainNav ul.breadcrumb li a {color: #f35b00;text-decoration: none;}
 #mainNav ul.breadcrumb li a:hover {color: #f35b00;text-shadow:none}
@@ -70,8 +72,8 @@
  #NaplesHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.1) 0,rgba(92,77,66,0.7) 85%,rgb(41, 33, 28) 100%),url(../img/NaplesPic/NaplesHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #CapriHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.1) 0,rgba(92,77,66,0.6) 80%,rgb(41, 33, 28) 100%),url(../img/CapriPic/CapriHeader4.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #RomeHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.2) 0,rgba(92,77,66,0.4) 80%,rgb(41, 33, 28) 100%),url(../img/RomePic/RomeHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
- .masthead h2{font-family: 'Alegreya', serif;max-width:20rem;font-size:1rem;text-shadow:1px 1px 4px rgba(0, 0, 0, 0.6);color:rgb(235, 235, 235)}
- .masthead h1{font-family: 'Vesper Libre', serif;font-size:3rem;line-height:3rem;letter-spacing:.8rem; color:#ff8c09;text-shadow: 1px 1px 4px rgba(92, 77, 66, 0.8);}
+ .masthead h2{font-family: 'Alegreya', serif!important;max-width:20rem;font-size:1rem;text-shadow:1px 1px 4px rgba(0, 0, 0, 0.6);color:rgb(235, 235, 235)}
+ .masthead h1{font-family: 'Vesper Libre', serif!important;font-size:3rem;line-height:3rem;letter-spacing:.8rem; color:#ff8c09;text-shadow: 1px 1px 4px rgba(92, 77, 66, 0.8);}
  #cityPageTitle{width:600px}
  /*.masthead h2{color:white;}*/
  @media (min-width:768px){.masthead h1{font-size:4rem;line-height:4rem}}   
@@ -127,7 +129,10 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
 #destinations img:hover{transform: scale(1.1)}
 #destinations .card-img-top{border-top-left-radius:0!important;border-top-right-radius:0!important}
 #destinations .card{border-radius:0!important; margin-top:1rem}
-
+#destinations .card-body{padding:1rem}
+#destinations .card-title{font-size:16px;margin-bottom:0}
+    @media(min-width:576px){
+      #destinations .card-title{font-size:18px!important;}}
 
 /*@media (min-width: 764px){
 .card-deck {
@@ -251,8 +256,8 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
   a{color:#f35b00}
 
 
- footer{padding:3rem 0; color:rgba(255,255,255,0.8)}
- footer .abc {color:white}
+ footer{padding:3rem 0; color:rgba(255,255,255,0.8);font-family:'Baskervville',serif}
+ footer .abc {color:white;}
 
 
 

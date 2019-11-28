@@ -1,0 +1,111 @@
+ /* slideshow */
+* {box-sizing: border-box}
+ /* Slideshow container */
+ #DesNa1head{position:relative;width:100%;height:auto;padding:0rem;background:url(../img/bg_pattern.png) repeat center top;background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+.slideshow-container {position: relative; margin: auto; height:80%;background:url(../img/bg_pattern.png) repeat center top}
+/* style="position:relative;width:100%;height:auto;min-height:35rem;background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover" */
+.slideimg{width:100%;vertical-align: middle}
+.mySlides {display: none}
+
+
+ /* Next & previous buttons */
+.prev, .next {cursor: pointer; position: absolute; top: 50%; width: auto;
+  padding: 5px; margin-top: -22px;color: rgba(0,0,0,0.8)!important; background-color:rgba(255,255,255,0.6);font-weight: bold; font-size: 14px;
+  transition: 0.3s ease; border-radius: 0 3px 3px 0; user-select: none;}
+ /* Position the "next button" to the right */
+.next {right: 0; border-radius: 3px 0 0 3px;}
+ /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {color:white!important;background-color: rgba(0,0,0,0.6);}
+@media(min-width:576px){
+  .prev, .next{padding:18px}}
+
+ /* Caption text #f2f2f2*/
+.slidetext {color: black; font-size: 15px; padding: 8px 12px; position: absolute; bottom: 8px; width: 100%; text-align: center;}
+ /* Number text (1/3 etc) */
+.slidenumtext {font-family:'EB Garamond',serif;font-size: 10px; position: absolute; color:rgb(83, 83, 83)!important}
+
+ /* The dots/bullets/indicators */
+.dot {cursor: pointer; height: 8px; width: 8px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.3s ease;}
+.active, .dot:hover {background-color: #717171;}
+@media(min-width:576px){
+  .dot{height: 15px; width: 15px;}
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}} 
+
+/* On smaller screens, decrease text size */
+ @media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}} 
+
+
+
+
+/* lightbox */
+/*  * {box-sizing: border-box;}*/
+.lightbox-section {padding:1.5rem}
+
+
+ .row > .lightcolumn { padding: 0 8px; }
+  
+ .row:after { content: ""; display: table; clear: both; }
+  
+ .lightcolumn { float: left; width: 33%; padding:5px}
+ .lightcolumn4 { float: left; width: 25%; padding:5px}
+ #modalRow{padding:20px;}
+    @media(min-width:576px){
+      #modalRow{padding:2rem;}}
+
+  /* The Modal (background) */
+ .modal {display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);}
+
+  /* Modal Content */
+ .modal-content {position: relative; background-color: rgba(0,0,0,0.8); margin: auto; padding: 0; width: 80%; max-width: 1200px;}
+ @media(min-width:576px){
+  .modal-content{margin:auto}}
+  
+  /* The Close Button */
+ .close {color: #fff; position: absolute; top: 10px; right: 10px; font-size: 25px; font-weight: bold; margin-top:5rem }
+ .close:hover, .close:focus {color: #fff; text-decoration: none; cursor: pointer;}
+ @media(min-width:576px){
+  .close{right: 25px; font-size: 35px;}}
+  
+ .mylight {display: none;}
+  
+ .cursor {cursor: pointer;}
+  
+  /* lightbox Next & previous buttons */
+ .prevlight,.nextlight {cursor: pointer; position: absolute; top: 50%; width: auto; padding: 5px; margin-top: -50px;
+  color: rgb(233, 233, 233)!important; background-color: rgba(0, 0, 0, 0.3);font-weight: bold; font-size: 12px; transition: 0.6s ease; border-radius: 0 3px 3px 0;
+  user-select: none; -webkit-user-select: none;}
+    @media(min-width:576px){
+      .prevlight,.nextlight{font-size:20px;padding: 8px;}}
+  /* Position the "next button" to the right */
+ .nextlight {right: 0; border-radius: 3px 0 0 3px;}
+ .prevlight:hover, .nextlight:hover { background-color: rgba(0, 0, 0, 0.7);}
+  
+  /* lightbox Number text (1/3 etc) */
+ .numbertext {color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;}
+  
+ .imglight{ margin-bottom: -4px;} /* modal large img */
+  
+ .caption-container {text-align: center; background-color: black; padding: 2px 16px; color: white;}
+  
+ .demolight {opacity: 0.6;}
+ .active,.demolight:hover {opacity: 1;}
+  
+ img.hover-shadow { transition: 0.3s;}
+ .hover-shadow:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
