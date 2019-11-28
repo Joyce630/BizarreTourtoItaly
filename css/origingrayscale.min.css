@@ -1,0 +1,331 @@
+/*!
+ * Start Bootstrap - Grayscale v5.0.9 (https://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+ */
+ body{font-family:Nunito;letter-spacing:.0625em}
+/* @media "mobile-first", 放在default style的下面*/
+ #mainNav{min-height:30px !important;background-color:#fff} /* min-height:50px background-color:rgba(255,255,255,0)*/
+ #navContainer{padding:0px}
+ .navbar{padding:0rem!important}
+
+
+ /* toggler: menu button*/
+ #mainNav .navbar-toggler{font-size:75%;padding:.4rem;margin-right: 1rem;color:#f35b00;border:1px solid #f35b00;font-weight:700;}
+ #mainNav .navbar-toggler:focus{outline:0;}
+
+ #mainNav .navbar-collapse .nav-item .nav-link:hover{background-color: #fff7f1;color:#f35b00}
+  @media (min-width:992px){
+    #mainNav .navbar-collapse .nav-item .nav-link:hover{background-color: #fff7f1bb;color:#f35b00}}
+
+ #mainNav .navbar-brand{color:#f4623a;font-weight:700;padding:5px 0;margin-left:1rem;font-size:12px}
+  @media (min-width:576px){#mainNav .navbar-brand{font-size:1.1rem}}
+ #mainNav .navbar-brand:hover{color:#f4623a}
+ #navbar-Home { margin-left:2rem}
+ #mainNav .navbar-nav .nav-item:hover{color:fade(white,80%);outline:0;background-color:transparent}
+ #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus{outline:0;background-color:transparent} 
+ /*當width不小於992時... */
+ @media (min-width:992px)
+    {#mainNav{padding-top:0;padding-bottom:0;border-bottom:none;background-color:transparent;transition:background-color .3s ease-in-out}
+    #mainNav .navbar-brand {padding:0.8rem;color:rgba(255,255,255);}  /*  */
+
+
+    /* 大屏幕navBar */
+ #mainNav .nav-link{transition:none;padding:1.1rem 1.1rem;color:rgba(255,255,255);font-weight:700;text-shadow:1px 1px 3px #646464}
+ #mainNav .nav-link:hover{color:#f35b00;background-color: rgba(255,255,255,0.5);text-shadow:none}
+
+   /* scroll down時的navBar */
+ #mainNav.navbar-shrink{background-color:#fff;padding:5px auto;}
+ #mainNav.navbar-shrink .navbar-brand {color:#f35b00}
+ #mainNav.navbar-shrink .navbar-brand:hover {color:#f35b00;outline:0;border-bottom:.25rem solid #f35b00}
+ #mainNav.navbar-shrink .nav-link{color:#353535;border-bottom:.25rem solid transparent;text-shadow:none} /* padding:1.1rem 1.2rem 1.1rem; */
+ #mainNav.navbar-shrink .nav-link:hover{color:#f35b00;}
+ #mainNav.navbar-shrink .nav-link.active{color:#f35b00;outline:0;border-bottom:.25rem solid #f35b00}}
+ #mainNav.navbar-shrink ul.breadcrumb li a, #mainNav.navbar-shrink ul.breadcrumb li,  #mainNav.navbar-shrink ul.breadcrumb li+li:before {color:#353535;text-shadow:none}
+ @media (min-width:992px){
+   #mainNav.navbar-shrink ul.breadcrumb a{color:#f35b00}
+   #mainNav.navbar-shrink{background-color:#fff;padding:5px auto;}
+ }
+ #mainNav .nav-link .js-scroll-trigger:focus,#mainNav .nav-link .js-scroll-trigger:hover{text-decoration:none;color:#e45603;background-color: #fff7f1} 
+  
+/* breadcrumb */
+#mainNav ul.breadcrumb {margin-top: 0px;margin-bottom:0px;padding:0rem 0.5rem!important;list-style: none;background-color:rgba(0,0,0,0)}
+#mainNav ul.breadcrumb li {display: inline;font-size: 12px;color:#fff;text-shadow:none;font-weight:700}
+#mainNav ul.breadcrumb li+li:before {padding: 0px;color: #f35b00;content: "/\00a0";}
+ @media (min-width:576px){#mainNav ul.breadcrumb li+li:before{padding: 8px;}}
+#mainNav ul.breadcrumb li a {color: #f35b00;text-decoration: none;}
+#mainNav ul.breadcrumb li a:hover {color: #f35b00;text-shadow:none}
+#DesnavContainer{ justify-content: start;}  /* put the breadcrumb to the left */
+@media (min-width:992px){
+  #mainNav ul.breadcrumb li a, #mainNav ul.breadcrumb li+li:before{color: #fff;text-decoration: none;text-shadow:1px 1px 3px #646464;}
+  #mainNav ul.breadcrumb {margin-top:1rem; margin-bottom:1rem}}
+@media (min-width:576px){  
+  #mainNav ul.breadcrumb { padding: 0rem 0.5rem!important}  /*margin-top:1rem; */
+  #mainNav ul.breadcrumb li{ font-size: 18px;}}
+
+ /* masthead */  /* background-size: cover ---> fill the container*/
+ .masthead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.3) 0,rgba(92,77,66,0.7) 75%,rgb(41, 33, 28) 100%),url(../img/bg-masthead8.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ #NaplesHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.1) 0,rgba(92,77,66,0.7) 85%,rgb(41, 33, 28) 100%),url(../img/NaplesPic/NaplesHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ #CapriHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.1) 0,rgba(92,77,66,0.6) 80%,rgb(41, 33, 28) 100%),url(../img/CapriPic/CapriHeader4.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ #RomeHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.2) 0,rgba(92,77,66,0.4) 80%,rgb(41, 33, 28) 100%),url(../img/RomePic/RomeHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ .masthead h2{font-family: 'Alegreya', serif;max-width:20rem;font-size:1rem;text-shadow:1px 1px 4px rgba(0, 0, 0, 0.6);color:rgb(235, 235, 235)}
+ .masthead h1{font-family: 'Vesper Libre', serif;font-size:3rem;line-height:3rem;letter-spacing:.8rem; color:#ff8c09;text-shadow: 1px 1px 4px rgba(92, 77, 66, 0.8);}
+ #cityPageTitle{width:600px}
+ /*.masthead h2{color:white;}*/
+ @media (min-width:768px){.masthead h1{font-size:4rem;line-height:4rem}}   
+ @media (min-width:992px){.masthead{height:100vh;padding:0}
+ .masthead h1{font-size:6.5rem;line-height:6.5rem;letter-spacing:.8rem}
+ .masthead h2{max-width:30rem;font-size:1.25rem;}}
+ /* ShowMe button */
+ .btn {box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;padding:1.25rem 2rem;font-family:'Nunito';font-size:80%;text-transform:uppercase;letter-spacing:.15rem;border:0}
+ .btn-primary{background-color:#e27a02}
+ .btn-primary:hover{background-color:#d15006e8}
+ .btn-primary:active{background-color:#e45603e8!important} 
+ @media(max-width:992px){.btn {font-size:60%;padding:0.75rem 1rem;}}
+
+
+ /* .startbtn {box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;padding:1rem 2rem;font-family:'Varela Round';font-size:80%;text-transform:uppercase;letter-spacing:.15rem;border:0} */
+ .home-intro-section h2{font-size:20px;font-weight:700}
+ .home-intro-section p{font-size:14px}
+ .home-intro-section{padding:2rem 1.5rem 0rem 1.5rem;background-color:#ff8c09!important;background:linear-gradient(to bottom,rgba(107, 66, 40, 0.849) 0,rgba(235, 125, 0, 0.8) 10%),url(../img/Italy.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+  @media(min-width:992px){
+    .home-intro-section{padding:6rem 1.5rem 0rem 1.5rem;}}
+  @media(min-width:576px){
+    .home-intro-section h2{font-size:2rem}
+    .home-intro-section p{font-size:16px} }
+.home-intro-section img{width:70%;height:70%}
+  @media(min-width:576px){
+    .home-intro-section img{width:50%;height:50%}}
+
+/* city page intro section */
+.intro-section{padding:4rem 4rem 1rem 4rem;margin-left:auto;margin-right:auto;max-width:50rem;}  /* background-color:#ff8c09!important */
+.intro-section .featured-text{padding:1rem}
+.featured-text .text-center .text-lg-left{padding-bottom:0rem}
+.intro-section .intro-text{padding:3rem;font-size:90%}
+#cityWelcomeh4 {position: absolute;padding:10px;margin:10px;border-bottom:2px solid #da0909}
+.intro-section .cityIntroduction{margin-top:50px}
+.intro-section .cityIntroduction h6{font-weight:700}
+/* intro section> 992px, */
+@media(min-width:992px){
+    .intro-section .featured-text{padding:0 0 0 2rem;border-left:0.5rem solid #fff}
+    .intro-section{padding:5.5rem 1.8rem 4.5rem 1.8rem}}
+
+
+/* destination section city page */
+ .destinations-section {padding:3rem 1.8rem 1rem 1.8rem;background:url(../img/bg_pattern.png) repeat center top}
+ .destinations-section h2{color:black; margin:0.5rem auto 1rem auto}
+ .destination {margin: 1rem;}  /* background-color: show background-color when hover */
+/*.desImg{width:257px; height:131px}*/
+#destinations .desImg{
+   display:block; /*remove inline-block spaces*/
+   width:100%;
+  /* height:200px;*/
+margin:0; transition: transform .3s ease;} /*make image streatch*/
+#destinations .desImg-wrapper{overflow:hidden}
+#destinations img:hover{transform: scale(1.1)}
+#destinations .card-img-top{border-top-left-radius:0!important;border-top-right-radius:0!important}
+#destinations .card{border-radius:0!important; margin-top:1rem}
+
+
+/*@media (min-width: 764px){
+.card-deck {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}*/   /* How to overwrite media queries in cdn? 576-->764*/
+ /* destination section city page>992px */
+ @media(min-width:992px){
+   .destinations-section{padding:3rem 1.5rem} 
+   .destinations-section h2{margin:0.5rem auto}}
+
+ /* destination page--destinationinfo */
+ #destinationInfo #desTitle{color:#f4623a;font-weight: 600;margin-bottom:1rem;font-size:20px}
+  @media(min-width:576px){
+    #destinationInfo #desTitle{font-size:2rem}}
+ #destinationInfo .desIntroP{text-indent:2em;font-size:14px}
+ #destinationInfo .desInfoP {margin-top:15px!important;font-size:14px}
+  @media(min-width:576px){ 
+    #destinationInfo .desIntroP{font-size:18px}
+    #destinationInfo .desInfoP {font-size:16px}}
+ #destinationInfo .desinfoQuote{max-width: 900px;background-color:rgba(252, 251, 249, 0.6) ;color: #666;padding: 1rem 1rem 1rem 1.2rem;border-radius: 0px;margin: 16px 0;
+   -webkit-box-shadow:1px 1px 5px rgb(175, 175, 175);
+   -moz-box-shadow: 1px 1px 5px rgb(175, 175, 175);
+   box-shadow: 1px 1px 5px rgb(175, 175, 175);}
+  @media(min-width:576px){ 
+    #destinationInfo .desinfoQuote{padding: 2rem 5rem 1rem 5rem;margin: 16px 0;}}
+ #destinationInfo .jojospan{color:#f35b00; font-weight: 600}
+.fa-clock, .fa-euro-sign, .fa-subway, .fa-map{color:#f55427; margin-right:10px}
+
+/* city page--restaurants section */
+ .restaurants-section{padding:1rem 1.5rem 3rem 1.5rem;background:url(../img/bg_pattern.png) repeat center top} 
+ .restaurants-section h2{color:black; margin-top:15px;margin-bottom:0em}
+ /* city page--gallery section >992px */
+@media(min-width:992px){
+    .restaurants-section{padding:3rem 1.5rem 5rem 1.5rem;} 
+    .restaurants-section h2{margin-top:0.5em;margin-bottom:0em}}
+ 
+   /* city page, icons */
+ h2.City-sectiontitle {color:#f35b00;font-size:24px}
+    @media(min-width:576px){ 
+      h2.City-sectiontitle {font-size:2rem}}
+ .cityTipsTitleRow {padding:1.5rem 0 0.5rem 0}
+ .cityTipsTitleRow h2{margin-left:10px; position:relative;font-size:24px}
+ .fa-sun, .fa-bus, .fa-map-signs{/* position: absolute; */top: 100%;left: -65px;font-size: 32px;width: 60px;margin-top:-5px;padding-right: 10px;text-align: center;color:rgb(67, 155, 161);border-right: 1px dashed rgb(67, 155, 161);float: left;}
+    @media(min-width:576px){
+      .cityTipsTitleRow h2{font-size:2rem;margin-left:16px;}
+      .fa-sun, .fa-bus, .fa-map-signs{font-size: 42px;padding-right: 16px;}}
+
+
+ /* index page mymap section */
+ .mymap-section{padding:2rem 1.8rem 1rem 1.8rem; background:linear-gradient(to bottom,rgba(192, 115, 43, 0.8) 0,rgba(255, 140, 9, 0.8) 80%,rgb(255, 140, 9)),url(../img/bg-masthead6.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ .mymap-section h2 {margin: 2rem auto 1rem auto; color: rgb(255, 250, 249);font-size:20px;font-weight: 700;}
+ .mymap-section p {color: rgb(255, 250, 249);font-size:14px}
+   @media(min-width:576px){
+      .mymap-section h2{font-size:2rem}
+      .mymap-section p{font-size:16px}}
+ /*.mymap-section .featured-text{padding:1rem}*/
+ /*.featured-text .text-center .text-lg-right{padding-bottom:0rem}*/
+ /*.mymap-section .mymap-text{padding:3rem;font-size:90%;}*/
+ /* mymap section> 992px, */
+   @media(min-width:992px){
+     .mymap-section{padding:2rem 1.5rem 5.5rem 1.5rem}
+     .mymap-section .featured-text{padding:0 2rem 0 0}}
+/*@media (min-width:992px){
+     .mymap-section .mymap-text{padding:5rem}
+     .mymap-section .mymap-text hr{border-color:#a16464;border-width:.25rem;width:30%}}*/
+ 
+
+/* city page cityMap section*/
+ .cityMap-section{padding:3rem 1.8rem 1rem 1.8rem;background:url(../img/bg_pattern.png) repeat center top }
+ .cityMap-section .featured-text{padding:1rem}
+ .featured-text .text-center .text-lg-left{padding-bottom:0rem}
+ .cityMap-section .cityMap-text{padding:3rem;font-size:90%}
+ .cityMap-section h2{margin-bottom:2rem}
+ .cityMap-section .btn{margin-right:1rem}
+ /* mymap section> 992px */
+ @media(min-width:992px){
+     .cityMap-section .featured-text{padding:0 0 0 2rem}
+     .cityMap-section{padding:5.5rem 1.5rem 4.5rem 1.5rem}
+     .cityMap-section .btn{margin-right:1rem}}
+/*@media (min-width:992px){
+     .mymap-section .mymap-text{padding:5rem}
+     .mymap-section .mymap-text hr{border-color:#a16464;border-width:.25rem;width:30%}}*/
+
+#Mainmap, #Naplesmap, #Caprimap, #Romemap{width:100%;height:400px;position: relative; outline: none;}
+@media(min-width:992px){
+  #Mainmap, #Naplesmap, #Caprimap, #Romemap{width:100%;height:500px}
+}
+
+/* usefulTips section */
+
+ .usefulTips-section{padding:1rem 1.8rem 1rem 1.8rem;}
+ @media(min-width:576px){
+  .usefulTips-section{padding:3rem 1.8rem 1rem 1.8rem;}}
+ .barChart-section{padding:3rem 1.8rem 1rem 1.8rem;background:linear-gradient(to bottom,rgba(192, 115, 43, 0.8) 0,rgba(255, 140, 9, 0.8) 80%,rgb(255, 140, 9)),url(../img/bg-masthead6.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ .barChart-section .form-inline input{box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;padding:1.25rem 2rem;height:auto;font-family:'Nunito';font-size:80%;text-transform:uppercase;letter-spacing:.15rem;border:0}
+ .barChart-section .card-header{font-size: 1.3rem; color:#3f4142}
+ @media(min-width:992px){
+    .barChart-section{padding:10rem 0;}
+    .barChart-section .form-inline input{box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;padding:1.25rem 2rem;height:auto;font-family:'Nunito';font-size:80%;text-transform:uppercase;letter-spacing:.15rem;border:0}
+ }
+ .cityTipsContentRow p{font-size:14px}
+    @media(min-width:576px){
+      .cityTipsContentRow p{font-size:16px}}
+
+ /* contact card--> to be deleted */
+ /*.contact-section{padding:5rem 0 0}
+ .contact-section .card{border:0;border-bottom:.25rem solid #64a19d}
+ .contact-section .card h4{font-size:.8rem;font-family: 'Anton',sans-serif;text-transform:uppercase;letter-spacing:.15rem}
+ .contact-section .card hr{border-color:#64a19d;border-width:.25rem;width:3rem}*/
+ /* social media iconbg and icon--> to be deleted */
+ /*.contact-section .social{margin-top:5rem}
+ .contact-section .social a{text-align:center;height:3rem;width:3rem;background:rgba(255, 255, 255, 0.1);border-radius:100%;line-height:3rem;color:rgba(255,255,255,.3)}
+ .contact-section .social a:hover{color:rgba(255,255,255,.5)} .bg-primary{background-color:#b3ff00!important}
+ .contact-section .social a:active{color:#fff}*/
+ 
+ .bg-black{background-color:rgb(255, 140, 9)!important}
+ .text-primary{color:#a16464!important}
+  a{color:#f35b00}
+
+
+ footer{padding:3rem 0; color:rgba(255,255,255,0.8)}
+ footer .abc {color:white}
+
+
+
+ /* #a16464 */   /* #f4623a */  /* #e45603 */
+
+/*  Responsive Timeline src: https://foundation.zurb.com/building-blocks/blocks/responsive-timeline.html  */
+ /* responsive timeline section style */
+ .ResTimeLine-section{padding:2rem 1.8rem 1rem 1rem;}
+    @media(min-width:992px){
+      .ResTimeLine-section{padding:2rem 10rem 5rem 10rem}}
+
+ .timeline .timeline-item::after, .timeline .timeline-item::before {
+  clear: both;
+  content: '';
+  display: block;
+  width: 100%;
+}
+
+.timeline {margin: 30px auto;padding: 0 10px;position: relative;transition: all 0.25s ease-in;width: 100%;}
+
+/* line */
+.timeline::before {background: rgb(255, 140, 9);content: '';height: 100%;left: 50%;position: absolute;top: 0;width: 3px;}
+.timeline::after {clear: both;content: '';display: table;width: 100%;}
+
+.timeline a {color: #f35b00;font-weight: bold;transition: all 0.25s ease-in;}
+.timeline a:hover {transition: all 0.25s ease-in;} /* box-shadow: 0 1px 0px 0px #ff8585; */
+
+.timeline .timeline-item {margin-bottom: 40px;position: relative;}
+/* circles */
+.timeline .timeline-item .timeline-icon {
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 140, 9);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  margin-left: -14px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+/* icon in the circle */
+  /*.timeline .timeline-item .timeline-icon img,*/
+.timeline .timeline-item .timeline-icon svg {left: 5.7px;top: 5px;position: relative;color:#f55427;width:20px;height:20px}
+
+.timeline .timeline-item .timeline-content {
+  /*padding: 20px;*/
+  text-align: right;
+  transition: all 0.25s ease-in;
+  width: 45%;
+  background: transparent;
+  padding-right:0px;
+}
+
+.timeline .timeline-item .timeline-content img{max-width:100%}
+.timeline .timeline-item .timeline-content p {color: #414141;}
+.timeline .timeline-item .timeline-content p {font-size: 12px;line-height: 1.4;margin-bottom: 0.5rem;}
+    @media(min-width:39.9375em){
+      .timeline .timeline-item .timeline-content p{font-size: 16px}}
+.timeline .timeline-item .timeline-content .timeline-content-date {font-size: 20px;font-weight: bold;margin-bottom: 0.3rem;color:#f35b00}
+.timeline .timeline-item .timeline-content .timeline-content-month {font-size: 12px;/*text-transform: uppercase;*/font-weight: 400;color: #414141}
+    @media screen and (min-width: 39.9375em) {
+      .timeline .timeline-item .timeline-content .timeline-content-date{font-size:22px}}
+    @media(min-width:39.9375em){
+      .timeline .timeline-item .timeline-content .timeline-content-month{font-size:16px}}
+
+.timeline .timeline-item .timeline-content.right {float: right;text-align: left;}
+
+    @media screen and (max-width: 39.9375em) {
+      .timeline {margin: 30px;padding: 0;width: 90%;}
+      .timeline::before {left: 0;}
+      .timeline .timeline-item .timeline-content {float: right;text-align: left;width: 90%;font-size:12px}
+      .timeline .timeline-item .timeline-content::before, .timeline .timeline-item .timeline-content.right::before {border-left: 0;border-right: 7px solid #000000;left: 10%;margin-left: -6px;}
+      .timeline .timeline-item .timeline-icon {left: 0;}}
+
+
+
+

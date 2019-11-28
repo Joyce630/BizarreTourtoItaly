@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151417722-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151417722-1');
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Bizarre Tour to Italy/Capri</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+   <!-- √ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">-->
+
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+
+<!-- leaflet CSS and js -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+crossorigin=""></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://unpkg.com/topojson@3"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+
+
+<!-- chart d3 c3-->
+<!--<link rel="stylesheet" href="/path/to/c3.css">-->
+<link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style3copy.css">
+    <link href="css/origingrayscale.min.css" rel="stylesheet">
+
+
+
+ <!-- Custom styles  -->
+<!--  <link href="css/grayscale.min.css" rel="stylesheet"> -->
+
+
+</head>
+
+<body id="page-top">
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <div id="slide-out" class="side-nav sn-bg-4 ">  <!-- fixed-top -->
+        <nav id="sidebar" class="sticky-top sticky-offset">
+            <div id="dismiss"  class="side-nav sn-bg-4 fixed">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <img class="img-fluid" id="sidebarLogo" src="img/Logo.svg" >
+            </div>
+            <ul class="components" id="myul" align="center">
+                
+               <!--<li class="active">--> 
+                    <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a> -->
+                    <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul> -->
+               <!--</li>--> 
+                <li>
+                    <!-- <a aria-expanded="false" >Cities</a> -->   <!-- href="#pageSubmenu"  data-toggle="collapse" -->
+                    <!--<ul class="list-unstyled sidebarItem" id="pageSubmenu"> --> <!-- class="collapse list-unstyled" -->
+                        <!--<li>
+                            <a class="sidebarItem" href="#">Naples</a>
+                        </li>
+                        <li>
+                            <a class="sidebarItem" href="#">Capri</a>
+                        </li>
+                        <li>
+                            <a class="sidebarItem" href="#">Pompeii</a>
+                        </li>
+                        <li>
+                            <a class="sidebarItem" href="#">Venice</a>
+                        </li>
+                        <li>
+                            <a class="sidebarItem" href="#">Sardinia</a>
+                        </li>
+                        <li>
+                            <a class="sidebarItem" href="#">Rome</a>
+                        </li>
+                    </ul>-->
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Index.html">Home</a>  <!-- active:highlight current page item-->
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Naples.html">Naples</a>
+                    <a class="sidebarItem active" href="BizarreTourtoItaly_Capri.html">Capri</a>
+                    <a class="sidebarItem" href="#">Pompeii</a>
+                    <a class="sidebarItem" href="#">Venice</a>
+                    <a class="sidebarItem" href="#">Sardinia</a>
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Rome.html">Rome</a>
+                </li>
+                
+            </ul>  <!-- end sidebar list-->
+
+        </nav>  <!-- #sidebar -->
+        </div>  <!-- id="slide-out" class="side-nav sn-bg-4 fixed-top" -->
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" > <!-- class= ... navbar-toggleable-md scrolling-navbar double-nav -->
+                <div class="container" id="navContainer"> <!-- class... container-fluid -->
+
+                    <div id="sidebarCollapse" class="navbar-header">  <!-- 加hover -->
+                        <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><span><i class="fas fa-align-left"></i></span></a>
+                    </div>
+
+                    <ul class="breadcrumb">
+                        <li><a href="BizarreTourtoItaly_Index.html">Home</a></li>
+                        <li><a href="#top">Capri</a></li>
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">                        
+                        Menu
+                    </button>
+                    <!--<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>-->
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">  <!-- class= nav ... -->
+                            <li class="nav-item">   <!-- class="nav-item active" -->
+                                <a class="nav-link js-scroll-trigger" href="#intro">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#destinations">Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#restaurants">Restaurants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#usefulTips">Useful Tips</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    
+                </div>  <!-- end #navContainer-->
+            </nav>
+
+
+            <!-- Header -->
+            <header class="masthead" id="CapriHead">
+                <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <img src="img/CapriHead.svg" id="cityPageTitle" class="img-fluid">
+                    <h2 class="mx-auto mt-4 mb-5">Pop-Culture Tour Of The Anime <br>JOJO's Bizarre Adventure: Golden Wind</h2>
+                    <a href="#intro" class="btn btn-primary js-scroll-trigger" >Welcome to Capri!</a> 
+                    <!--<div class="startWrapper">
+                    <a href="#gallery" class="startbtn js-scroll-trigger" style="background-image: url(getStartBtn.svg); background-repeat: no-repeat;padding:px;max-width: 100%;background-size: cover;color:honeydew">Get Started</a>
+                    </div> -->
+                </div>
+                </div>
+            </header>
+
+            <!-- Intro Section -->
+            <section id="intro" class="intro-section">
+                <div class="container">
+                    
+                    <div class="row align-items-center justify-content-center no-gutters mb-4 mb-lg-5">
+                            <h4 id="cityWelcomeh4">Welcome to Capri</h4>
+                        </div>
+                        <div class="row cityIntroduction">
+                            <p class="" mb-0">
+                                Capri is beautiful – seriously beautiful! There’s barely a grubby building or untended garden to blemish the splendor. Steep cliffs rise majestically from an impossibly blue sea; elegant villas drip with wisteria and bougainvillea; even the trees seem to be carefully manicured.
+                            </p>
+                            <p class=""  mb-0">
+                                Long a preserve of celebrities and the super-rich, this small, precipitous island off the west end of the Sorrento Peninsula has a tangible deluxe feel. Your credit card can get a lot of exercise in its expensive restaurants and museum-quality jeweler shops – a cappuccino alone can cost €7. But, regardless of this, Capri is worth visiting, whatever your budget. Glide silently up craggy Monte Solaro on a chairlift. Relive erstwhile poetic glories in Villa Lysis. Find a quiet space in the sinuous lanes of Anacapri. In the process, you’ll enjoy some sublime moments.
+                            </p>
+                        </div>
+                                
+                    </div>
+            </section>
+
+            
+            
+            <!-- Destinations Section -->
+             <section id="destinations" class="destinations-section text-center bg-light">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="column">
+                            <h2 class="City-sectiontitle">Destinations Appeared in JOJO </h2>
+                            <!-- <p class="text-black text-center" > introduction tbc... </p> -->
+                        </div>
+                    </div>
+
+                    <div class="card-deck align-items-center">
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Capri_DestinationCa1.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/CapriPic/MarinaGrande4.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Marina Grande</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Capri_DestinationCa2.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/CapriPic/ViaDonGiobbeRuocco1.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Via Don Giobbe Ruocco</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Capri_DestinationCa3.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/CapriPic/Piazzetta1.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Piazza Umberto I</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+                    </div>  <!-- end card-deck -->
+
+                        <div class="row align-items-center">
+                            <div class="col-lg-12 mx-100" style="margin-top:2rem">
+                                <h2 class="City-sectiontitle">Other Worth Visiting Sights</h2>
+                                <iframe class="airtable-embed" src="https://airtable.com/embed/shrjyAxWxyBOBujfK?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid rgb(123, 123, 123);"></iframe>
+                            </div>
+                        </div><!-- end other destinations -->
+
+                </div>  <!-- end container -->
+            </section>
+
+
+            <!-- Gallery-restaurant Section -->
+            <section id="restaurants" class="restaurants-section text-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                    <div class="col-lg-12 mx-100">
+                        <h2 class="City-sectiontitle">Restaurants in Capri</h2>
+                        <p class="text-black"  style="opacity: 0.9;"> Tips: Somes restaurants offer food appeared in the anime! You can click on the gallery to view the details.</p>
+                        <iframe class="airtable-embed" src="https://airtable.com/embed/shrpvkKmUlidGUloy?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid rgb(123, 123, 123);"></iframe>                        
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+                
+            <!-- cityMaps Section -->
+            <section id="cityMap" class="cityMap-section bg-light">
+                <div class="container">
+                <!-- Naples Map Row -->
+                <div class="row align-items-center mb-4 mb-lg-5">  <!-- no-gutters: no spacing between col-->
+                    <div class="col-xl-3 col-lg-4" id="titleAndbtn">
+                    <div class="text-center text-lg-center" > <!-- text-lg-left: sets the text alignment to left when the viewport size >992px(lg)-->
+                        <div><h2 class="text-center">Map of Capri</h2></div>
+                        <div><button type="button" class="btn-lg btn-warning align-items-center btn-responsive" id="destinationsbtn" onclick="show_destinations();">Show Destinations in JOJO</button></div>
+                        <br>
+                        <div><button type="button" class="btn-lg btn-warning align-items-center btn-responsive" id="otherdestinationbtn" onclick="show_otherdes();">Show Other Sights</button></div>
+                        <br>
+                        <div><button type="button" class="btn-lg btn-warning align-items-center btn-responsive" id="restaurantbtn" onclick="show_restaurants();">Show Restaurants</button></div>
+                    </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-8" >  <!--col-xl-8 col-lg-7--> <!-- numbers of the columns can add up to 12(max).-->
+                        <!-- svg: scalable vector graphics; to make the map adjust its size automatically-->
+                        <div id="Caprimap" class="map map-home leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" ></div> <!--class="map map-home leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"-->
+                    </div>
+                </div>
+                </div>
+            </section>
+
+
+            <!-- Useful tips Section -->
+            <section id="usefulTips" class="usefulTips-section">
+            <div class="container">
+                <div class="row align-items-center no-gutters justify-content-start cityTipsTitleRow">
+                    <i class="fas fa-sun"></i> 
+                    <h2 class="text-center">Weather</h2>
+                </div>
+                <div class="row no-gutters align-items-center justify-content-center cityTipsContentRow">
+
+                    <div class="col-xl-7 col-lg-6">
+                            <a class="weatherwidget-io" href="https://forecast7.com/en/40d5514d24/capri/" data-label_1="CAPRI" data-label_2="Weather Forecast" data-font="Jura" data-days="5" data-theme="beige" data-shadow="rgba(255, 255, 255, 0)" data-accent="rgba(160, 137, 54, 0.08)" data-suncolor="#ffbc34" data-mooncolor="#6c8380" data-cloudcolor="#a49a86" data-raincolor="#6c8380" >CAPRI Weather Forecast</a>
+                            <script>
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                            </script>
+                            <p class="text-right" style="color:cadetblue; margin-bottom:0rem!important;font-size: 12px;">powered by <a href="https://weatherwidget.io/" target="_blank" style="color:darkcyan">Weather Widget</a> </p>
+                          
+                            <!--  <button type="button" class="btn-sm btn-warning align-items-center" id="climatebtn">Show Climate</button>  -->
+                    </div>
+                    <div class="col-xl-4 col-lg-5 ">
+                        <p id="chartTitle" class="text-center" style="margin-bottom:0px!important;color:cadetblue;">Climate</p>
+                        <div id="CAclimateChart" class="c3" style="position: relative; height:200px"></div>
+                        <p class="text-right" style="color:cadetblue; margin-bottom:0rem!important;font-size: 12px;"> <a href=" https://www.weather-atlas.com/zh/italy/capri-climate" target="_blank" style="color:darkcyan">Source: weather-atlas.com</a> </p>
+                    </div>
+                </div>  <!-- end weather -->
+            </div> <!--end container-->
+
+            <div class="container" >
+                <div class="row align-items-center no-gutters cityTipsTitleRow" >  <!-- mb-4 mb-lg-5 -->
+                    <i class="fas fa-bus"></i>
+                    <h2 class="text-center ">Transportation</h2>
+
+                </div>
+                <div class="row no-gutters align-items-center justify-content-center cityTipsContentRow">
+                    <div class="col-xl-10 col-lg-10">
+                        <p style="text-indent:2em">
+                            If you want to get around the small island of Capri independently, public transport consists of a handful of bus routes and a funicular railway that climbs 150m from the gateway to Capri where all the ferries arrive at Marina Grande to the main Capri Town. 
+                        </p>
+                        <p style="text-indent:2em">
+                            <b>Funicular (cable car), public buses, taxis, scooter, Mount Solaro chairlift and ferries</b> are main public transportation on this island. Of course, <b>hiking</b> is also popular among the visitors. Many parts of the island of Capri are easily reached on foot. When the island gets crowded, it's often more enjoyable to take a leisurely walk to your destination than to wait in the long line at the bus stop under the hot sun.
+                        </p>
+                        <p style="text-indent:2em">
+                            The rugged scenery of Capri is much of the attraction for visitors to the island and as a result, roads are narrow. To enable any transport or buses to get around the island, <b>buses</b> are small, seating only 10 people, plus as many again standing. 
+                            The main road connecting Marina Grande at sea level to the main town Capri Town (150m) and onto Anacapri (300m) is only 5km, so no journey is too long.
+                        </p>
+                        <p style="text-indent:2em">
+                            There is a <b>chairlift</b> from Anacapri to the highest point of the island of Capri, Monte Solaro at 300m.                                
+                        </p>
+                        <p style="text-indent:2em">
+                            The most popular sea excursion from Marina Grande to the Blue Grotto has a private scheduled service where you can buy tickets on the day. Open top <b>taxi cabs </b>are also available.
+                        </p>
+                        <p style="text-indent:2em">
+                            Main connections in Capri:
+                        </p>
+                        <p><ul>
+                            <li><b>From Marina Grande to the Piazzetta</b> – funicular (cable car)</li>
+                            <li><b>From Marina Grande to Anacapri</b> – bus or funicular (to Capri town) + bus</li>
+                            <li><b>From Capri to Anacapri</b> – bus</li>
+                            <li><b>To the Blue Grotto</b> – boat from Marina Grande or bus from Anacapri</li>                        
+                        </ul></p>
+                        <p style="text-indent:2em">
+                             <b><a href="https://www.capri.net/en/getting-around" target="_blank">Here</a></b> is a useful link for visitors to get practical information using public transport to travel on Capri independently .
+                        </p>
+
+                    </div>
+                </div> <!--end transportation-->
+            </div> <!--end container-->
+
+            <div class="container" >
+
+                <div class="row align-items-center no-gutters cityTipsTitleRow">  <!-- mb-4 mb-lg-5 -->
+                    <!--<div class="col-xl-2 col-lg-3">-->
+                    <i class="fas fa-map-signs"></i>
+                    <h2 class="text-center">Route</h2>
+                    <!--</div>-->
+                </div>
+                <div class="row no-gutters align-items-center justify-content-center cityTipsContentRow">
+                    <div class="col-xl-10 col-lg-9">
+                            
+                    </div>
+                </div><!--end route-->
+            </div> <!--end container-->
+
+            </section>
+
+
+
+            <!-- Footer -->
+            <footer class="bg-black small text-center">
+                <div class="container">
+                    <b class="abc" style="font-size: 15px">Bizarre Adventure to Italy</b>
+                    <br><p>This website is designed to help you plan your pop-culture tour to Italy featured with the anime JOJO’s Bizarre Adventure: Golden Wind. tbc...</p>
+                    <b class="abc" style="font-size: 15px">Statement</b>
+                    <br><p>This is a student project by Joyce LI for the course COMM5961 of the New Media Programme of the School of Journalism and Communication, CUHK.</p>
+                    <b class="abc" style="font-size: 15px"> Contact: sendtojoyce630@gmail.com</b>
+                    <br><br>Copyright &copy; Joyce Website 2019
+                </div>
+            </footer>
+        
+        </div>  <!-- page content #content -->
+    </div>  <!-- #wrapper -->
+
+    <div class="overlay"></div>
+
+
+    
+
+    <!-- sidebar jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+
+<!-- downloaded Bootstrap core JavaScript-->
+<script src="js/jquery/jquery.min.js"></script>   <!-- 1 -->
+<script src="js/bootstrap/bootstrap.bundle.min.js"></script>  <!-- 2 -->
+
+
+<!-- Plugin JavaScript (important) -->
+<script src="js/jquery-easing/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+
+
+<!-- Custom scripts for this template -->
+<!--<script src="js/grayscale.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-grayscale/5.0.9/js/grayscale.min.js" integrity="sha256-spj4omdr8o22qWojzXHE4yOp3yAxKZWnJGOTypzvvjw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/italyTopo2.js"></script>  <!-- Italy geojson data -->
+<script src="js/CapriMapChart.js"></script> <!-- 这个要放在italyTopo2 的下面哦...-->
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+<!-- sidebar -->
+    <script type="text/javascript">
+$(document).ready(function () {
+        /* $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        }); */
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myul");
+        var items = header.getElementsByClassName("sidebarItem");
+
+        $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+
+        // Add active class to the current button (highlight it)   
+        for (var i = 0; i < items.length; i++) {
+            items[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+        }
+        
+        // change the navBar style on scroll
+       /* var scroll_pos = 0;
+        $(document).scroll(function() { 
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 80) {
+                $("#mainNav").css('background-color', '#fff');
+                //$(".navbar-brand").css('color', 'black');
+            } else {
+                $("#mainNav").css('background-color', 'rgba(0,0,0,0)');
+               // $(".navbar-brand").css('color', '#fff');
+
+            }
+        }); */
+            
+// cityMap button -->
+
+
+});// end ready
+ </script>
+</body>
+
+</html>

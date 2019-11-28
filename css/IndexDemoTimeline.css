@@ -1,0 +1,28 @@
+/* new */
+ /* timeline section style */
+.timeline-section {background:url(../img/bg_pattern.png) repeat center top}
+.timeline {position: relative; margin: 50px auto 10px auto; padding: 40px 0 10px 0;width: 1000px; box-sizing: border-box }  /* padding: 40px 0 */
+/* create the line */
+.timeline:before {content:''; position:absolute;left: 50%; width: 3px; height: 98%;background:rgb(255, 140, 9)}  
+.timeline ul {margin:0; padding:0;}
+.timeline ul li {list-style: none; position:relative; width: 50%; padding: 20px 40px; box-sizing: border-box;}  /* list-style: none 不显示li的点点 */
+.timeline ul li:nth-child(odd) {float:left; text-align: right; align-content: right; clear: both}
+.timeline .recDayOdd {text-align: left;}
+.timeline ul li:nth-child(even) {float:right; align-content: left; clear: both}  /* clear 定义了元素的哪边不允许出现浮动元素, both双边 */
+.timeline .recDayEven {text-align: right; }
+.content {padding-bottom: 20px}
+/* dots on line */ 
+.timeline ul li:nth-child(odd):before{content:''; position:absolute; top: 24px; right:-6.6px; width: 10px; height: 10px; background: rgb(255, 255, 255); border-radius: 50%; box-shadow: 0 0 0 3px rgba(255, 140, 9)} 
+.timeline ul li:nth-child(even):before{content:''; position:absolute; top: 24px; left:-3.4px; width: 10px; height: 10px; background: rgb(255, 255, 255); border-radius: 50%; box-shadow: 0 0 0 3px rgba(255, 140, 9)} 
+/* text */
+.timeline ul li h3 {margin:0; padding:0; font-weight: 600; font-size: 1.5rem; color:#f35b00}
+.timeline ul li p {margin:0; padding:0; font-size: 16px}
+/* .timeline ul li:nth-child(odd) .recDay {position: absolute; top: 12px; right: -165px; margin: 0; padding: 8px 16px; background :rgba(255, 140, 9); color:#fff;border-radius: 0.5rem; box-shadow: 0 0 0 0.2rem rgba(255, 140, 9, 0.2)}
+.timeline ul li:nth-child(even) .recDay {position: absolute; top: 12px; left : -165px; margin: 0; padding: 8px 16px; background :rgba(255, 140, 9); color:#fff;border-radius: 0.5rem; box-shadow: 0 0 0 0.2rem rgba(255, 140, 9, 0.2)}
+*/
+.timeline ul li:nth-child(odd) .recDayOdd {position: absolute; top: 5rem; right: -355px; align-content: left; margin: 0; padding: 8px 8px; }
+.timeline ul li:nth-child(even) .recDayEven {position: absolute; top: 5rem; left : -355px; align-content: left; margin: 0; padding: 8px 8px; }
+@media(min-width:992px){
+    .timeline ul li h3 {font-size: 1.5rem}
+    .timeline ul li p {font-size: 1rem}
+}
