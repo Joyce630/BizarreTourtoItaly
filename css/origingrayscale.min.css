@@ -33,7 +33,7 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
 
 
     /* 大屏幕navBar */
- #mainNav .nav-link{transition:none;padding:1.1rem 1.1rem;color:rgba(255,255,255);font-weight:700;text-shadow:1px 1px 3px #646464}
+ #mainNav .nav-link{transition:none;padding:1rem 1rem;color:rgba(255,255,255);font-weight:700;text-shadow:1px 1px 3px #646464}
  #mainNav .nav-link:hover{color:#f35b00;background-color: rgba(255,255,255,0.5);text-shadow:none}
 
    /* scroll down時的navBar */
@@ -41,7 +41,7 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
  #mainNav.navbar-shrink .navbar-brand {color:#f35b00}
  #mainNav.navbar-shrink .navbar-brand:hover {color:#f35b00;outline:0;border-bottom:.25rem solid #f35b00}
  #mainNav.navbar-shrink .nav-link{color:#353535;border-bottom:.25rem solid transparent;text-shadow:none} /* padding:1.1rem 1.2rem 1.1rem; */
- #mainNav.navbar-shrink .nav-link:hover{color:#f35b00;}
+ #mainNav.navbar-shrink .nav-link:hoverResTimeLine-section{color:#f35b00;}
  #mainNav.navbar-shrink .nav-link.active{color:#f35b00;outline:0;border-bottom:.25rem solid #f35b00}}
  #mainNav.navbar-shrink ul.breadcrumb li a, #mainNav.navbar-shrink ul.breadcrumb li,  #mainNav.navbar-shrink ul.breadcrumb li+li:before {color:#353535;text-shadow:none}
  @media (min-width:992px){
@@ -50,7 +50,7 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
  }
  #mainNav .nav-link .js-scroll-trigger:focus,#mainNav .nav-link .js-scroll-trigger:hover{text-decoration:none;color:#e45603;background-color: #fff7f1} 
  #mainNav #navbarResponsive ul{font-size:12px}
-    @media(min-width:576px){#mainNav #navbarResponsive ul{font-size:18px}}
+    @media(min-width:576px){#mainNav #navbarResponsive ul{font-size:16px}}
 
 /* breadcrumb */
 #mainNav ul.breadcrumb {margin-top: 0px;margin-bottom:0px;padding:0rem 0.5rem!important;list-style: none;background-color:rgba(0,0,0,0)}
@@ -68,8 +68,8 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
   #mainNav ul.breadcrumb li{ font-size: 18px;}}
 
  /* masthead */  /* background-size: cover ---> fill the container*/
- .masthead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.3) 0,rgba(92,77,66,0.7) 75%,rgb(41, 33, 28) 100%),url(../img/bg-masthead8.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
- #NaplesHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.1) 0,rgba(92,77,66,0.7) 85%,rgb(41, 33, 28) 100%),url(../img/NaplesPic/NaplesHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ .masthead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(92,77,66, 0.6) 0,rgba(136, 77, 1, 0.4) 25%,rgb(41, 33, 28) 100%),url(../img/bg-masthead8.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ #NaplesHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.3) 0,rgba(92,77,66,0.7) 85%,rgb(41, 33, 28) 100%),url(../img/NaplesPic/NaplesHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #CapriHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.1) 0,rgba(92,77,66,0.6) 80%,rgb(41, 33, 28) 100%),url(../img/CapriPic/CapriHeader4.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #RomeHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.2) 0,rgba(92,77,66,0.4) 80%,rgb(41, 33, 28) 100%),url(../img/RomePic/RomeHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  .masthead h2,#NaplesHead h2,#CapriHead h2,#RomeHead h2{font-family: 'Alegreya', serif!important;max-width:20rem;font-size:1rem;text-shadow:1px 1px 4px rgba(0, 0, 0, 0.6);color:rgb(235, 235, 235)}
@@ -86,17 +86,18 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
  .btn-primary:hover{background-color:#d15006e8}
  .btn-primary:active{background-color:#e45603e8!important} 
  @media(max-width:992px){.btn {font-size:60%;padding:0.75rem 1rem;}}
-
+/* logo on navbar */
+ #mainNav #logo img{margin:0; padding:0; height:50px}
 
  /* .startbtn {box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;padding:1rem 2rem;font-family:'Varela Round';font-size:80%;text-transform:uppercase;letter-spacing:.15rem;border:0} */
  .home-intro-section h2{font-size:20px;font-weight:700}
  .home-intro-section p{font-size:14px}
- .home-intro-section{padding:2rem 1.5rem 0rem 1.5rem;background-color:#ff8c09!important;background:linear-gradient(to bottom,rgba(107, 66, 40, 0.849) 0,rgba(235, 125, 0, 0.8) 10%),url(../img/Italy.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ .home-intro-section{padding:2rem 1.5rem 0rem 1.5rem;background-color:#ff8c09!important;background:linear-gradient(to bottom,rgba(107, 66, 40, 0.8) 0,rgba(224, 120, 0, 0.8) 10%),url(../img/Italy.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
   @media(min-width:992px){
     .home-intro-section{padding:6rem 1.5rem 0rem 1.5rem;}}
   @media(min-width:576px){
     .home-intro-section h2{font-size:2rem}
-    .home-intro-section p{font-size:16px} }
+    .home-intro-section p{font-size:18px} }
 .home-intro-section img{width:70%;height:70%}
   @media(min-width:576px){
     .home-intro-section img{width:50%;height:50%}}
@@ -208,7 +209,9 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
  .cityMap-section .featured-text{padding:1rem}
  .featured-text .text-center .text-lg-left{padding-bottom:0rem}
  .cityMap-section .cityMap-text{padding:3rem;font-size:90%}
- .cityMap-section h2{margin-bottom:2rem}
+ .cityMap-section h2{margin-bottom:1rem;font-size:24px}
+    @media(min-width:576px){
+      .cityMap-section h2{margin-bottom:2rem;font-size:2rem}}
  .cityMap-section .btn{margin-right:1rem}
  /* mymap section> 992px */
  @media(min-width:992px){
@@ -265,7 +268,7 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
 
 /*  Responsive Timeline src: https://foundation.zurb.com/building-blocks/blocks/responsive-timeline.html  */
  /* responsive timeline section style */
- .ResTimeLine-section{padding:2rem 1.8rem 1rem 1rem;}
+ .ResTimeLine-section{padding:2rem 1.8rem 1rem 1rem;background-color: #faf9f8;}
     @media(min-width:992px){
       .ResTimeLine-section{padding:2rem 10rem 5rem 10rem}}
 
@@ -312,7 +315,7 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
   padding-right:0px;
 }
 
-.timeline .timeline-item .timeline-content img{max-width:100%}
+.timeline .timeline-item .timeline-content img{max-width:100%;border:3px hidden #FD6E6A; }
 .timeline .timeline-item .timeline-content p {color: #414141;}
 .timeline .timeline-item .timeline-content p {font-size: 12px;line-height: 1.4;margin-bottom: 0.5rem;}
     @media(min-width:39.9375em){
@@ -323,6 +326,12 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
       .timeline .timeline-item .timeline-content .timeline-content-date{font-size:22px}}
     @media(min-width:39.9375em){
       .timeline .timeline-item .timeline-content .timeline-content-month{font-size:16px}}
+
+.cityimgContainer {position: relative;width: 100%;  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0,0.5);-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);}
+.cityimgContainer .imgCitylink {position:absolute;width: 100%;height: 100%;top: 0;left: 0;padding: 0;z-index:2;} /* make the overlay clickable*/
+.imgCityOverlay {position: absolute;top: 0;bottom: 0;left: 0;right: 0;height: 100%;width: 100%;opacity: 0;transition: .3s ease;background-color: #E98B2A;z-index:1;}
+.cityimgContainer:hover .imgCityOverlay {opacity: 0.9;}
+.overlayText {color: white;font-family: 'Baskervville',serif;font-size: 16px;position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);text-align: center;}
 
 .timeline .timeline-item .timeline-content.right {float: right;text-align: left;}
 
