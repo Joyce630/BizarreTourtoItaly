@@ -285,7 +285,7 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
 .timeline::before {background: rgb(255, 140, 9);content: '';height: 100%;left: 50%;position: absolute;top: 0;width: 3px;}
 .timeline::after {clear: both;content: '';display: table;width: 100%;}
 
-.timeline a {color: #f35b00;font-weight: bold;transition: all 0.25s ease-in;}
+.timeline .Citylink {color: #f35b00;font-weight: bold;transition: all 0.25s ease-in;} /* link in the city name */
 .timeline a:hover {transition: all 0.25s ease-in;} /* box-shadow: 0 1px 0px 0px #ff8585; */
 
 .timeline .timeline-item {margin-bottom: 40px;position: relative;}
