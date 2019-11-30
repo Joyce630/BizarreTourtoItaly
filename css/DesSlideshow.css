@@ -5,7 +5,9 @@
 .slideshow-container {position: relative; margin: auto; height:80%;background:url(../img/bg_pattern.png) repeat center top}
 /* style="position:relative;width:100%;height:auto;min-height:35rem;background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover" */
 .slideimg{width:100%;vertical-align: middle}
-.mySlides {display: none}
+.mySlides {display: none; margin-top:30px}
+    @media(min-width:992px){
+      .mySlides{margin-top:0px}}
 
 
  /* Next & previous buttons */

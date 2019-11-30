@@ -3,26 +3,25 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
- body{letter-spacing:.0625em;color:#222527!important} /*font-family:'EB Garamond',serif*/
- ul,li,p{font-family:'Crimson Pro:',serif}
+ body{letter-spacing:.0625em} /*font-family:'EB Garamond',serif*/
+ ul,li,p{font-family:'Baskervville',serif}
 a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
 /* @media "mobile-first", 放在default style的下面*/
- #mainNav{min-height:35px !important;background-color:#fff} /* min-height:50px background-color:rgba(255,255,255,0)*/
+ #mainNav{min-height:30px !important;background-color:#fff} /* min-height:50px background-color:rgba(255,255,255,0)*/
  #navContainer{padding:0px}
  .navbar{padding:0rem!important}
 
 
  /* toggler: menu button*/
- #mainNav .navbar-toggler{font-size:85%;padding:.35rem;margin-right: 0.2rem;color:#f35b00;border:1px solid #f35b00;font-weight:700;}
+ #mainNav .navbar-toggler{font-size:75%;padding:.4rem;margin-right: 0.2rem;color:#f35b00;border:1px solid #f35b00;font-weight:700;}
  #mainNav .navbar-toggler:focus{outline:0;}
 
  #mainNav .navbar-collapse .nav-item .nav-link:hover{background-color: #fff7f1;color:#f35b00}
   @media (min-width:992px){
     #mainNav .navbar-collapse .nav-item .nav-link:hover{background-color: #fff7f1bb;color:#f35b00}}
 
- #mainNav .navbar-brand{color:#f4623a;font-weight:700;padding:5px 0;margin-left:0.8rem;margin-right:3px;font-size:15px}
-    @media (min-width:576px){
-      #mainNav .navbar-brand{font-size:1.1rem;margin-right:16px}}
+ #mainNav .navbar-brand{color:#f4623a;font-weight:700;padding:5px 0;margin-left:1rem;font-size:12px}
+  @media (min-width:576px){#mainNav .navbar-brand{font-size:1.1rem}}
  #mainNav .navbar-brand:hover{color:#f4623a}
  #navbar-Home { margin-left:2rem}
  #mainNav .navbar-nav .nav-item:hover{color:fade(white,80%);outline:0;background-color:transparent}
@@ -45,19 +44,17 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
  #mainNav.navbar-shrink .nav-link:hoverResTimeLine-section{color:#f35b00;}
  #mainNav.navbar-shrink .nav-link.active{color:#f35b00;outline:0;border-bottom:.25rem solid #f35b00}}
  #mainNav.navbar-shrink ul.breadcrumb li a, #mainNav.navbar-shrink ul.breadcrumb li,  #mainNav.navbar-shrink ul.breadcrumb li+li:before {color:#353535;text-shadow:none}
-    @media (min-width:992px){
-      #mainNav.navbar-shrink ul.breadcrumb a{color:#f35b00}
-      #mainNav.navbar-shrink{background-color:#fff;padding:5px auto;}}
-#mainNav.navbar-shrink ul.breadcrumb-city li a, #mainNav.navbar-shrink ul.breadcrumb-city li, #mainNav.navbar-shrink ul.breadcrumb-city li+li:before {color:#353535;text-shadow:none}
-    @media (min-width:992px){
-      #mainNav.navbar-shrink ul.breadcrumb-city a{color:#f35b00}}
-#mainNav .nav-link .js-scroll-trigger:focus,#mainNav .nav-link .js-scroll-trigger:hover{text-decoration:none;color:#e45603;background-color: #fff7f1} 
-#mainNav #navbarResponsive ul{font-size:14px}
-        @media(min-width:576px){#mainNav #navbarResponsive ul{font-size:16px}}
+ @media (min-width:992px){
+   #mainNav.navbar-shrink ul.breadcrumb a{color:#f35b00}
+   #mainNav.navbar-shrink{background-color:#fff;padding:5px auto;}
+ }
+ #mainNav .nav-link .js-scroll-trigger:focus,#mainNav .nav-link .js-scroll-trigger:hover{text-decoration:none;color:#e45603;background-color: #fff7f1} 
+ #mainNav #navbarResponsive ul{font-size:12px}
+    @media(min-width:576px){#mainNav #navbarResponsive ul{font-size:16px}}
 
 /* breadcrumb */
-#mainNav ul.breadcrumb{margin-top: 0px;margin-bottom:0px;padding:0rem 0.5rem!important;list-style: none;background-color:rgba(0,0,0,0)}
-#mainNav ul.breadcrumb li {display: inline;font-size: 14px;color:#fff;text-shadow:none;font-weight:700}
+#mainNav ul.breadcrumb {margin-top: 0px;margin-bottom:0px;padding:0rem 0.5rem!important;list-style: none;background-color:rgba(0,0,0,0)}
+#mainNav ul.breadcrumb li {display: inline;font-size: 12px;color:#fff;text-shadow:none;font-weight:700}
 #mainNav ul.breadcrumb li+li:before {padding: 0px;color: #f35b00;content: "/\00a0";font-family:'EB Garamond',serif}
  @media (min-width:576px){#mainNav ul.breadcrumb li+li:before{padding: 8px;}}
 #mainNav ul.breadcrumb li a {color: #f35b00;text-decoration: none;}
@@ -70,29 +67,13 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
   #mainNav ul.breadcrumb { padding: 0rem 0.5rem!important}  /*margin-top:1rem; */
   #mainNav ul.breadcrumb li{ font-size: 18px;}}
 
-
-/* breadcrumb-city */
-#mainNav ul.breadcrumb-city{margin-top: 0px;margin-bottom:0px;padding:0rem 0.5rem!important;list-style: none;background-color:rgba(0,0,0,0)}
-#mainNav ul.breadcrumb-city li {display: inline;font-size: 18px;color:#fff;text-shadow:none;font-weight:700}
-#mainNav ul.breadcrumb-city li+li:before {padding: 0px;color: #f35b00;content: "/\00a0";font-family:'EB Garamond',serif}
- @media (min-width:576px){#mainNav ul.breadcrumb-city li+li:before{padding: 8px;}}
-#mainNav ul.breadcrumb-city li a {color: #f35b00;text-decoration: none;}
-#mainNav ul.breadcrumb-city li a:hover {color: #f35b00;text-shadow:none}
-#DesnavContainer{ justify-content: start;}  /* put the breadcrumb to the left */
-@media (min-width:992px){
-  #mainNav ul.breadcrumb-city li a, #mainNav ul.breadcrumb-city li+li:before{color: #fff;text-decoration: none;text-shadow:1px 1px 3px #646464;}
-  #mainNav ul.breadcrumb-city {margin-top:1rem; margin-bottom:1rem}}
-@media (min-width:576px){  
-  #mainNav ul.breadcrumb-city { padding: 0rem 0.5rem!important}  /*margin-top:1rem; */
-  #mainNav ul.breadcrumb-city li{ font-size: 18px;}}
-
  /* masthead */  /* background-size: cover ---> fill the container*/
  .masthead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(92,77,66, 0.6) 0,rgba(136, 77, 1, 0.4) 25%,rgb(41, 33, 28) 100%),url(../img/bg-masthead8.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #NaplesHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.3) 0,rgba(92,77,66,0.7) 85%,rgb(41, 33, 28) 100%),url(../img/NaplesPic/NaplesHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #CapriHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.1) 0,rgba(92,77,66,0.6) 80%,rgb(41, 33, 28) 100%),url(../img/CapriPic/CapriHeader4.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #RomeHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.2) 0,rgba(92,77,66,0.4) 80%,rgb(41, 33, 28) 100%),url(../img/RomePic/RomeHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  .masthead h2,#NaplesHead h2,#CapriHead h2,#RomeHead h2{font-family: 'Alegreya', serif!important;max-width:20rem;font-size:1rem;text-shadow:1px 1px 4px rgba(0, 0, 0, 0.6);color:rgb(235, 235, 235)}
- .masthead h1{font-family: 'Vesper Libre', serif!important;font-size:60px;line-height:4rem;letter-spacing:.3rem; color:#ff8800;text-shadow: 1px 1px 4px rgba(92, 77, 66, 0.8);}
+ .masthead h1{font-family: 'Vesper Libre', serif!important;font-size:3rem;line-height:3rem;letter-spacing:.8rem; color:#ff8c09;text-shadow: 1px 1px 4px rgba(92, 77, 66, 0.8);}
  #cityPageTitle{width:600px}
  /*.masthead h2{color:white;}*/
  @media (min-width:768px){.masthead h1{font-size:4rem;line-height:4rem}}   
@@ -110,7 +91,7 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
 
  /* .startbtn {box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;padding:1rem 2rem;font-family:'Varela Round';font-size:80%;text-transform:uppercase;letter-spacing:.15rem;border:0} */
  .home-intro-section h2{font-size:20px;font-weight:700}
- .home-intro-section p{font-size:14px;color:#f5f5f5}
+ .home-intro-section p{font-size:14px}
  .home-intro-section{padding:2rem 1.5rem 0rem 1.5rem;background-color:#ff8c09!important;background:linear-gradient(to bottom,rgba(107, 66, 40, 0.8) 0,rgba(224, 120, 0, 0.8) 10%),url(../img/Italy.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
   @media(min-width:992px){
     .home-intro-section{padding:6rem 1.5rem 0rem 1.5rem;}}
@@ -122,7 +103,7 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
     .home-intro-section img{width:50%;height:50%}}
 
 /* city page intro section */
-.intro-section{padding:3.5rem 1.2rem 1rem 1.6rem;margin-left:auto;margin-right:auto;max-width:50rem;}  /* background-color:#ff8c09!important */
+.intro-section{padding:4rem 1rem 1rem 1.4rem;margin-left:auto;margin-right:auto;max-width:50rem;}  /* background-color:#ff8c09!important */
 .intro-section .featured-text{padding:1rem}
 .featured-text .text-center .text-lg-left{padding-bottom:0rem}
 .intro-section .intro-text{padding:3rem;font-size:90%}
@@ -132,7 +113,7 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
 /* intro section> 992px, */
 @media(min-width:992px){
     .intro-section .featured-text{padding:0 0 0 2rem;border-left:0.5rem solid #fff}
-    .intro-section{padding:3.5rem 1.8rem 4.5rem 1.8rem}}
+    .intro-section{padding:5.5rem 1.8rem 4.5rem 1.8rem}}
 
 
 /* destination section city page */
@@ -205,7 +186,7 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
 
 
  /* index page mymap section */
- .mymap-section{padding:2rem 1.8rem 1rem 1.8rem; background:linear-gradient(to bottom,rgba(225, 118, 17, 0.8) 0,rgba(207, 115, 10, 0.8) 80%,rgb(255, 140, 9)100%),url(../img/bg-masthead6.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ .mymap-section{padding:2rem 1.8rem 1rem 1.8rem; background:linear-gradient(to bottom,rgba(192, 115, 43, 0.8) 0,rgba(255, 140, 9, 0.8) 80%,rgb(255, 140, 9)),url(../img/bg-masthead6.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  .mymap-section h2 {margin: 2rem auto 1rem auto; color: rgb(255, 250, 249);font-size:20px;font-weight: 700;}
  .mymap-section p {color: rgb(255, 250, 249);font-size:14px}
    @media(min-width:576px){
@@ -228,7 +209,7 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
  .cityMap-section .featured-text{padding:1rem}
  .featured-text .text-center .text-lg-left{padding-bottom:0rem}
  .cityMap-section .cityMap-text{padding:3rem;font-size:90%}
- .cityMap-section h2{margin-bottom:1rem;font-size:24px;color:#f35b00}
+ .cityMap-section h2{margin-bottom:1rem;font-size:24px}
     @media(min-width:576px){
       .cityMap-section h2{margin-bottom:2rem;font-size:2rem}}
  .cityMap-section .btn{margin-right:1rem}
@@ -348,10 +329,10 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
 
 .cityimgContainer {position: relative;width: 100%;  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0,0.5);-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);}
 .cityimgContainer .imgCitylink {position:absolute;width: 100%;height: 100%;top: 0;left: 0;padding: 0;z-index:2;} /* make the overlay clickable*/
-.imgCityOverlay {position: absolute;top: 0;bottom: 0;left: 0;right: 0;height: 100%;width: 100%;opacity: 0;transition: .3s ease;background-color: #E98B2A;z-index:1;}
+/*.imgCityOverlay {position: absolute;top: 0;bottom: 0;left: 0;right: 0;height: 100%;width: 100%;opacity: 0;transition: .3s ease;background-color: #E98B2A;z-index:1;}
 .cityimgContainer:hover .imgCityOverlay {opacity: 0.9;}
 .overlayText {color: white;font-family: 'Baskervville',serif;font-size: 16px;position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);text-align: center;}
-
+*/
 .timeline .timeline-item .timeline-content.right {float: right;text-align: left;}
 
     @media screen and (max-width: 39.9375em) {
@@ -362,27 +343,5 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
       .timeline .timeline-item .timeline-icon {left: 0;}}
 
 
-
-/* read more button */
-#MoreText{display:none;}  /* do not show the text when the page loaded */
-.btn-container{margin: auto;height:44px;width:166.23px;}
-#Moretoggle{
-  user-select:none;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  cursor:pointer;
-  border-top:1px solid #da0909;
-  border-left:none;
-  border-right:none;
-  border-bottom:none;
-  padding:2px;
-  margin:10px;
-  font-size:16px;
-  font-family:'EB Garamond',serif;
-  background:none;
-  color:#222527;
-  box-sizing:border-box;
-}
 
 

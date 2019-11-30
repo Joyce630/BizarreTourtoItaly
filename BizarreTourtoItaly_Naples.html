@@ -35,7 +35,7 @@
     <script src="https://kit.fontawesome.com/8d2becaf44.js" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Baskervville|EB+Garamond:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Crimson+Pro:200,800|EB+Garamond:400,600&display=swap" rel="stylesheet">
 
 <!-- leaflet CSS and js -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
@@ -146,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><span><i class="fas fa-align-left"></i></span></a>
                     </div>
 
-                    <ul class="breadcrumb">
+                    <ul class="breadcrumb-city">
                         <li><a href="BizarreTourtoItaly_Index.html">Home</a></li>
                         <li><a href="#top">Naples</a></li>
                     </ul>
@@ -203,18 +203,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p class="" mb-0">
                             Naples (Napoli) is raw, high-octane energy, a place of soul-stirring art and panoramas, spontaneous conversations and unexpected, inimitable elegance.
                         </p>
+                        <span id="MoreText">
                         <h6>History</h6>
                         <p class="" mb-0">
-                            Naples' millennia-old backstory could bust a bookshelf.  First settled by Greeks in the second millennium BC, Naples is one of the oldest continuously inhabited urban areas in the world. Naples' historic city center is the largest in Europe and a UNESCO World Heritage Site, with a wide range of culturally and historically significant sites nearby, including the Palace of Caserta and the Roman ruins of Pompeii and Herculaneum. 
+                            Naples' millennia-old backstory could bust a bookshelf.  
+                            First settled by Greeks in the second millennium BC, Naples is one of the oldest continuously inhabited urban areas in the world. 
+                            Naples' historic city center is the largest in Europe, including <span style="color:#f4623a">the Palace of Caserta</span> and the Roman ruins of <span style="color:#f4623a">Pompeii and Herculaneum</span>. 
                         </p>
                         <h6>Art & Nature</h6>
                         <p class="" mb-0">
-                            Naples' wealth of cultural assets is extraordinary. You'll find two royal palaces, three castles, and ancient ruins that include some of Christianity's oldest frescoes. The city's Museo Archeologico Nazionale claims the world's finest collection of Pompeiian frescoes and mosaics, while its Cappella Sansevero holds Italy's most extraordinary marble sculpture. You'll find Caravaggio masterpieces in the Pio Monte della Misericordia, Palazzo Zevallos Stigliano and Museo di Capodimonte
-                            Naples is also known for its natural beauties such as Posillipo, Phlegraean Fields, Nisida, and Vesuvius.
+                            Naples' wealth of cultural assets is extraordinary. You'll find two royal palaces, three castles, and ancient ruins that include some of Christianity's oldest frescoes. The city's Museo Archeologico Nazionale claims the world's finest collection of Pompeiian frescoes and mosaics. 
+                            Naples is also known for its natural beauties such as <span style="color:#f4623a">Posillipo, Phlegraean Fields, Nisida, and Vesuvius</span>.
                         </p>
                         <h6>Glorious Food</h6>
                         <p class=""  mb-0">
-                            Blessed with rich volcanic soils, a bountiful sea, and countless generations of culinary know-how, the Naples region is one of Italy's epicurean heavyweights. Neapolitan cuisine is noted for its association with pizza, which originated in the city, as well as numerous other local dishes. It's here that you'll find the country's best pizza, pasta and espresso, its most appetizing street markets. Also, Naples has the most stars from the Michelin Guide of any Italian city.                        </p>
+                            Blessed with rich volcanic soils, a bountiful sea, and countless generations of culinary know-how, 
+                            the Naples region is famous for its glorious food, including<span style="color:#f4623a">pizza</span>, which originated in the city, <span style="color:#f4623a">pasta and espresso</span>, its most appetizing street markets. 
+                            Also, Naples <span style="color:#f4623a">has the most stars from the Michelin Guide</span> of any Italian city.                        
+                        </p>
+                        </span> <!-- end #MoreText -->
+                        <div class="btn-container More-btn text-center">
+                            <button id="Moretoggle">Read More</button>
+                        </div>
                     </div>
 
                 </div>
@@ -509,6 +519,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
 
+<script>
+    $(document).ready(function () {
+        // read more button
+        $("#Moretoggle").click(function() {
+            var elem = $("#Moretoggle").text();
+            if (elem == "Read More") {
+            //Stuff to do when btn is in the read more state
+                $("#Moretoggle").text("Read Less");
+                $("#MoreText").slideDown();
+            } else {
+            //Stuff to do when btn is in the read less state
+                $("#Moretoggle").text("Read More");
+                $("#MoreText").slideUp();
+            }
+        });
+    });
+
+</script>
+
 <!-- sidebar -->
     <script type="text/javascript">
 $(document).ready(function () {
@@ -540,7 +569,8 @@ $(document).ready(function () {
             this.className += " active";
             });
         }
-        
+
+
         // change the navBar style on scroll
        /* var scroll_pos = 0;
         $(document).scroll(function() { 
@@ -560,6 +590,9 @@ $(document).ready(function () {
 
 });// end ready
  </script>
+
+
+
 </body>
 
 </html>

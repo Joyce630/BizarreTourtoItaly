@@ -35,7 +35,7 @@
     <script src="https://kit.fontawesome.com/8d2becaf44.js" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Baskervville|EB+Garamond:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Crimson+Pro:200,800|EB+Garamond:400,600&display=swap" rel="stylesheet">
 
 
 <!-- leaflet CSS and js -->
@@ -147,7 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><span><i class="fas fa-align-left"></i></span></a>
                     </div>
 
-                    <ul class="breadcrumb">
+                    <ul class="breadcrumb-city">
                         <li><a href="BizarreTourtoItaly_Index.html">Home</a></li>
                         <li><a href="#top">Rome</a></li>
                     </ul>
@@ -204,19 +204,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p class="" mb-0">
                             A heady mix of haunting ruins, awe-inspiring art and vibrant street life, Italy’s hot-blooded capital is one of the world’s most romantic and charismatic cities. Exploring the city center by foot surrounded by glorious monuments and colossal remains takes you back in time to the “glory that was Rome”.                        
                         </p>
+                        <span id="MoreText">
                         <h6>History</h6>
                         <p class="" mb-0">
-                            The result of 3000 years of ad hoc urban development, Rome's cityscape is an exhilarating sight. Ancient icons such as the Colosseum, Roman Forum and Pantheon recall the city’s golden age as caput mundi (capital of the world), while monumental basilicas tell of its history as seat of the Catholic Church. Lording it over the skyline, St Peter’s Basilica towers over the Vatican, testifying to the ambition of Rome’s Renaissance popes and the genius of its game-changing architects. Elsewhere, ornate piazzas and showy fountains add a baroque flourish to the city's captivating streets.                        
+                            The result of 3000 years of ad hoc urban development, Rome's cityscape is an exhilarating sight. 
+                            Ancient icons such as <span style="color:#f4623a">the Colosseum, Roman Forum and Pantheon</span> recall the city’s golden age as caput mundi (capital of the world), while <span style="color:#f4623a">monumental basilicas</span> tell of its history as seat of the Catholic Church. 
+                        </p>
+                        <p class="" mb-0">
+                            Lording it over the skyline, <span style="color:#f4623a">St Peter’s Basilica towers</span> over the Vatican, testifying to the ambition of Rome’s Renaissance popes and the genius of its game-changing architects. Elsewhere, <span style="color:#f4623a">ornate piazzas and showy fountains</span> add a baroque flourish to the city's captivating streets.                        
                         </p>
                         <h6>Art</h6>
                         <p class="" mb-0">
-                            Throughout history, the city has starred in the great upheavals of Western art. The result is a city awash with priceless treasures. Ancient statues adorn world-class museums; Byzantine mosaics and Renaissance frescoes dazzle in art-rich churches; baroque facades flank medieval piazzas. Stroll through the center and without even trying you’ll come across masterpieces by the titans of European art – sculptures by Michelangelo, paintings by Caravaggio, frescoes by Raphael and fountains by Bernini.                        
+                            Throughout history, the city has starred in the great upheavals of Western art. 
+                            The result is a city awash with priceless treasures. 
+                        </p>
+                        <p class="" mb-0">
+                            Ancient statues adorn world-class museums; Byzantine mosaics and Renaissance frescoes dazzle in art-rich churches; baroque facades flank medieval piazzas. 
+                            Stroll through the center and without even trying you’ll come across masterpieces – sculptures by <span style="color:#f4623a">Michelangelo</span>, paintings by <span style="color:#f4623a">Caravaggio</span>, frescoes by Raphael and fountains by <span style="color:#f4623a">Bernini</span>.                        
                         </p>
                         <h6>Life in Rome</h6>
                         <p class=""  mb-0">
-                            A trip to Rome is as much about lapping up the "dolce vita" lifestyle as gorging on art and culture. Idling around picturesque streets, whiling away hours at street side cafes, people-watching on pretty piazzas – these are all central to the Roman experience. The tempo rises in the evening when fashionable drinkers descend on the city’s bars and cafes for a sociable aperitivo (drink with snacks) and trattorias hum with activity.                     
+                            A trip to Rome is as much about lapping up the "dolce vita" lifestyle as gorging on art and culture. Idling around <span style="color:#f4623a">picturesque streets</span>, whiling away hours at <span style="color:#f4623a">street side cafes</span>, people-watching on <span style="color:#f4623a">pretty piazzas</span> – these are all central to the Roman experience. 
                         </p>
+                        <p class=""  mb-0">
+                            The tempo rises in the evening when fashionable drinkers descend on the city’s bars and cafes for a sociable aperitivo (drink with snacks) and trattorias hum with activity.                     
+                        </p>
+                        </span><!-- end #MoreText -->
+                        <div class="btn-container More-btn text-center">
+                            <button id="Moretoggle">Read More</button>
                         </div>
+                    </div>
 
                 </div>
             </section>
@@ -474,6 +491,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
+
+<script>
+    $(document).ready(function () {
+        // read more button
+        $("#Moretoggle").click(function() {
+            var elem = $("#Moretoggle").text();
+            if (elem == "Read More") {
+            //Stuff to do when btn is in the read more state
+                $("#Moretoggle").text("Read Less");
+                $("#MoreText").slideDown();
+            } else {
+            //Stuff to do when btn is in the read less state
+                $("#Moretoggle").text("Read More");
+                $("#MoreText").slideUp();
+            }
+        });
+    });
+
+</script>    
 
 <!-- sidebar -->
     <script type="text/javascript">

@@ -35,7 +35,7 @@
     <script src="https://kit.fontawesome.com/8d2becaf44.js" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Baskervville|EB+Garamond:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Crimson+Pro:200,800|EB+Garamond:400,600&display=swap" rel="stylesheet">
 
 
 <!-- leaflet CSS and js -->
@@ -148,7 +148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><span><i class="fas fa-align-left"></i></span></a>
                     </div>
 
-                    <ul class="breadcrumb">
+                    <ul class="breadcrumb-city">
                         <li><a href="BizarreTourtoItaly_Index.html">Home</a></li>
                         <li><a href="#top">Capri</a></li>
                     </ul>
@@ -203,11 +203,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                         <div class="row cityIntroduction">
                             <p class="" mb-0">
-                                Capri is beautiful – seriously beautiful! There’s barely a grubby building or untended garden to blemish the splendor. Steep cliffs rise majestically from an impossibly blue sea; elegant villas drip with wisteria and bougainvillea; even the trees seem to be carefully manicured.
+                                Capri is beautiful – seriously beautiful! 
+                                There’s barely a grubby building or untended garden to blemish the splendor. 
+                                <span style="color:#f4623a">Steep cliffs</span> rise majestically from an impossibly <span style="color:#f4623a">blue sea</span></blue>; <span style="color:#f4623a">elegant villas</span> drip with <span style="color:#f4623a">wisteria and bougainvillea</span>; even the trees seem to be carefully manicured.
+                            </p>
+                            <span id="MoreText">
+                            <p class=""  mb-0">
+                                Long a preserve of celebrities and the super-rich, this small, precipitous island has a tangible deluxe feel. 
+                                Your credit card can get a lot of exercise in its <span style="color:#f4623a">expensive</span> restaurants and museum-quality jeweler shops – a cappuccino alone can cost €7. 
                             </p>
                             <p class=""  mb-0">
-                                Long a preserve of celebrities and the super-rich, this small, precipitous island off the west end of the Sorrento Peninsula has a tangible deluxe feel. Your credit card can get a lot of exercise in its expensive restaurants and museum-quality jeweler shops – a cappuccino alone can cost €7. But, regardless of this, Capri is worth visiting, whatever your budget. Glide silently up craggy Monte Solaro on a chairlift. Relive erstwhile poetic glories in Villa Lysis. Find a quiet space in the sinuous lanes of Anacapri. In the process, you’ll enjoy some sublime moments.
+                                But, regardless of this, Capri is worth visiting, whatever your budget. 
+                                Glide silently up craggy <span style="color:#f4623a">Monte Solaro</span> on a chairlift. 
+                                Relive erstwhile poetic glories in <span style="color:#f4623a">Villa Lysis</span>. 
+                                Find a quiet space in the sinuous lanes of <span style="color:#f4623a">Anacapri</span>. 
+                                In the process, you’ll enjoy some sublime moments.
                             </p>
+                            </span><!-- end #MoreText -->
+                            <div class="btn-container More-btn text-center">
+                                <button id="Moretoggle">Read More</button>
+                            </div>
                         </div>
                                 
                     </div>
@@ -445,6 +460,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
+<script>
+    $(document).ready(function () {
+        // read more button
+        $("#Moretoggle").click(function() {
+            var elem = $("#Moretoggle").text();
+            if (elem == "Read More") {
+            //Stuff to do when btn is in the read more state
+                $("#Moretoggle").text("Read Less");
+                $("#MoreText").slideDown();
+            } else {
+            //Stuff to do when btn is in the read less state
+                $("#Moretoggle").text("Read More");
+                $("#MoreText").slideUp();
+            }
+        });
+    });
+
+</script>
 
 <!-- sidebar -->
     <script type="text/javascript">
