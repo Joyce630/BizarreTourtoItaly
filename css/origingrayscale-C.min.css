@@ -346,7 +346,7 @@ footer p{font-size:10px}
     @media(min-width:39.9375em){
       .timeline .timeline-item .timeline-content .timeline-content-month{font-size:16px}}
 
-.cityimgContainer {position: relative;width: 100%;  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0,0.5);-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);}
+.cityimgContainer {position: relative;width: 100%;  -moz-box-shadow: none rgba(0, 0, 0,0.5);-webkit-box-shadow: none rgba(0, 0, 0, .5);box-shadow: none rgba(0, 0, 0, .5);}
 .cityimgContainer .imgCitylink {position:absolute;width: 100%;height: 100%;top: 0;left: 0;padding: 0;z-index:2;} /* make the overlay clickable*/
 .imgCityOverlay {position: absolute;top: 0;bottom: 0;left: 0;right: 0;height: 100%;width: 100%;opacity: 0;transition: .3s ease;background-color: #E98B2A;z-index:1;}
 .cityimgContainer:hover .imgCityOverlay {opacity: 0.9;}
