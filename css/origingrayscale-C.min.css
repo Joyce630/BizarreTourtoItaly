@@ -273,7 +273,7 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
  .contact-section .social a:hover{color:rgba(255,255,255,.5)} .bg-primary{background-color:#b3ff00!important}
  .contact-section .social a:active{color:#fff}*/
  
- .bg-black{background:linear-gradient(to bottom,rgb(255, 140, 9) 0, rgb(243, 134, 9) 20%)}
+ .bg-black{background:linear-gradient(to bottom,rgb(255, 140, 9) 0, rgb(243, 134, 9) 40%)}
  .text-primary{color:#a16464!important}
   a{color:#f35b00}
 
