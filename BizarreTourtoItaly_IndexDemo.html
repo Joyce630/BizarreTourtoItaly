@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153527792-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153527792-1', { 'optimize_id': 'GTM-WKTMW8X'});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KZBMQBH');</script>
+        <!-- End Google Tag Manager -->
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="KEYWORDS" content="意大利, 那不勒斯, 卡布里, 罗马, 威尼斯, 庞贝, Italy, Naples, Capri, Rome, Venice, Pompei, Napoli, Roma, Venezia, Pompeii, Sardegna, 旅游, 圣地巡礼, JOJO, JOJO的奇妙冒险, JOJO的奇妙冒险：黄金之风, 黄金之风, 动漫">
+
+    <title>Bizarre Tour to Italy</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Our Custom CSS & fonts-->
+    <link rel="stylesheet" href="css/style3copy.css">
+    <link href="css/origingrayscale.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Vesper+Libre:700|Crimson+Pro:200,800|EB+Garamond:400,600&display=swap" rel="stylesheet" type="text/css">
+    <!-- Scrollbar Custom CSS -->
+   <!-- √ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">-->
+
+<!-- modal -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+<!-- leaflet CSS and js -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+crossorigin=""></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://unpkg.com/topojson@3"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+
+ <!-- Custom styles  -->
+<!--  <link href="css/grayscale.min.css" rel="stylesheet"> -->
+
+
+</head>
+
+<body id="page-top">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZBMQBH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <div id="slide-out" class="side-nav sn-bg-4 ">  <!-- fixed-top -->
+        <nav id="sidebar" class="sticky-top sticky-offset">
+            <div id="dismiss"  class="side-nav sn-bg-4 fixed">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="sidebar-header">
+                <img class="img-fluid" id="sidebarLogo" src="img/Logo.svg" style="width:200%">
+            </div>
+            <ul class="components" id="myul" align="center">
+                <li>
+                    <a class="sidebarItem active" href="BizarreTourtoItaly_Index.html">Home</a>  <!-- active:highlight current page item-->
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Naples.html">Naples</a>
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Capri.html">Capri</a>
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Venice.html">Venice</a>
+                    <a class="sidebarItem" href="#">Sardinia(Im not accessiblee)</a>
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Rome.html">Rome</a>
+                </li>
+            </ul>  <!-- end sidebar list-->
+        </nav>  <!-- #sidebar -->
+        </div>  <!-- id="slide-out" class="side-nav sn-bg-4 fixed-top" -->
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg fixed-top " id="mainNav"> <!-- class= ... navbar-toggleable-md scrolling-navbar double-nav -->
+                <div class="container" id="navContainer"> <!-- class... container-fluid -->
+                    <!-- sidebar icon -->
+                    <div id="sidebarCollapse" class="navbar-header"> 
+                        <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><span><i class="fas fa-align-left"></i></span></a>
+                    </div>
+                    <!--<a class="navbar-brand js-scroll-trigger" id="navbar-Home" href="#page-top">Home</a> -->
+                    <div id="logo" class="pull-left">
+                        <a class="scrollto" href="#page-top">
+                            <img class="img-fluid" src="img/Logo.svg" alt="BizarreTourtoItaly" >
+                        </a> 
+                    </div>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                    </button>
+                    <!--<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>-->
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto text-center">  <!-- class= nav ... -->
+                            <li class="nav-item">   <!-- class="nav-item active" -->
+                                <a class="nav-link js-scroll-trigger" href="#home-intro">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#responsiveTimeLine">Cities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#mymap">Map</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    
+                </div>  <!-- end #navContainer-->
+            </nav>
+
+
+            <!-- Header -->
+            <header class="masthead" id="IndexHead">
+                <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto mt-3 text-center">
+                    <h1 class="mx-auto mb-3 text-uppercase">Bizarre Tour to Italy</h1>
+                    <h2 class="mx-auto mt-4 mb-5">Pop-Culture Tour of the Anime <br>JOJO's Bizarre Adventure: Golden Wind</h2>
+                    <a href="#home-intro" class="btn btn-primary js-scroll-trigger" >Show Me!</a> 
+                    <!--<div class="startWrapper">
+                    <a href="#gallery" class="startbtn js-scroll-trigger" style="background-image: url(getStartBtn.svg); background-repeat: no-repeat;padding:px;max-width: 100%;background-size: cover;color:honeydew">Get Started</a>
+                    </div> -->
+                </div>
+                </div>
+            </header>
+
+            <!-- Intro Section -->
+            <section id="home-intro" class="home-intro-section">
+                <div class="container">
+                    
+                    <div class="row align-items-center justify-content-center no-gutters mb-2">
+                        <div class="col-lg-10 mb-4 text-white">  <!-- flexcol -->
+                             <!-- text-lg-left: when screen size is larger, text aligns left; otherwise aligns center -->
+                                <h2 class="text-center">Make a Pop-Culture Tour to Italy</h2>
+                                <p class="mt-3" style="text-indent:2em">
+                                    Serving as a <span style="color:#fff"> <b>guidebook</b></span>, this website offers useful information of destinations and description related to the anime scene, helping you create your "golden experience" to Italy! 
+                                </p>
+                                <p class="mt-3" style="text-indent:2em">
+                                    JOJO's Bizarre Adventure: Golden Wind was set in Italy. Giorno and his teammates traversed six cities from south to north and created wonderful scenes in many famous attractions of Italy, which presented charming atmosphere of Italy to the audience. 
+                                </p>
+                        </div>
+                        <img class="img-fluid" src="img/index-intro-bg.png" alt="" >
+                    </div> <!-- end row -->
+                </div>
+            </section>
+            
+
+            <!--Responsive Timeline Section-->
+            <section id="responsiveTimeLine" class="ResTimeLine-section">
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <p class="timeline-content-date">
+                                <a href="BizarreTourtoItaly_Naples.html" target="_blank" class="Citylink">Naples</h2></a>
+                                <span class="timeline-content-month"> - In episodes 1 to 6, 10 to 12, 14, 39</span>
+                            </p>
+                            <p>
+                               There are <b>seven</b> destinations in Naples. <br>It is recommended to spend two-three days here.
+                            </p>
+                            <p>
+                                <div class="cityimgContainer">
+                                    <a href="BizarreTourtoItaly_Naples.html" target="_blank" class="imgCitylink"></a>
+                                    <div class="imgCityOverlay">  
+                                        <div class="overlayText">See what's in Naples</div>  
+                                    </div> <!--deleted in variable origin-->
+                                    <img class="img-fluid" src="img/NaplesPic/NaplesHeaderA.jpg" height="200px">
+                                </div>
+                            </p>
+
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                        <div class="timeline-content right">
+                            <p class="timeline-content-date">
+                                <a href="BizarreTourtoItaly_Capri.html" target="_blank" class="Citylink">Capri</h2></a>
+                                <span class="timeline-content-month"> - In episodes 7 to 9</span>
+                            </p>
+                            <p>
+                               There are <b>three</b> destinations in Capri. <br>It is recommended to spend one or two days here.
+                            </p>
+                            <p>
+                                <div class="cityimgContainer">
+                                    <a href="BizarreTourtoItaly_Capri.html" target="_blank" class="imgCitylink"></a>
+                                    <div class="imgCityOverlay">
+                                        <div class="overlayText">See what's in Capri</div>
+                                    </div>    <!--deleted in variable origin-->
+                                    <img class="img-fluid" src="img/CapriPic/CapriHeaderA.jpg" height="200px">
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <p class="timeline-content-date">
+                                <a href="BizarreTourtoItaly_Venice.html" target="_blank" class="Citylink">Venice</h2></a>
+                                <span class="timeline-content-month"> - In episodes 18 to 24</span>
+                            </p>
+                            <p>
+                               There are xxx destinations in Venice. <br>It is recommended to spend xx days here.
+                            </p>
+                            <p>
+                                <div class="cityimgContainer">
+                                    <a href="BizarreTourtoItaly_Venice.html" target="_blank" class="imgCitylink"></a>
+                                    <div class="imgCityOverlay">
+                                        <div class="overlayText">See what's in Venice</div>
+                                    </div>    <!--deleted in variable origin-->
+                                    <img class="img-fluid" src="img/VenicePic/VeniceHeaderA.jpg"  height="200px">
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                        <div class="timeline-content right">
+                            <p class="timeline-content-date">Sardinia</h2><span class="timeline-content-month"> - In episodes 26 to 29</span></p>
+                            <p>
+                               There are two destinations in Sardinia. <br>It is recommended to spend xx days here.
+                            </p>
+                            <p>
+                                <div class="cityimgContainer-C">
+                                    <img class="img-fluid" src="img/building.jpg" style="max-width:200px">
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <p class="timeline-content-date">
+                                <a href="BizarreTourtoItaly_Rome.html" target="_blank" class="Citylink">Rome</h2></a>
+                                <span class="timeline-content-month"> - In episodes 29 to 38</span>
+                            </p>
+                            <p>
+                               There are five destinations in Rome. <br>It is recommended to spend two or three days here.
+                            </p>
+                            <p>
+                                <div class="cityimgContainer">
+                                    <a href="BizarreTourtoItaly_Rome.html" target="_blank" class="imgCitylink"></a>
+                                    <div class="imgCityOverlay">
+                                        <div class="overlayText">See what's in Rome</div>
+                                    </div> <!--deleted in variable origin-->
+                                    <img class="img-fluid" src="img/RomePic/RomeHeaderA.jpg" height="200px">
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div><!--end timeline-->
+            </section>
+
+            <!-- Maps Section -->
+            <section id="mymap" class="mymap-section bg-light">
+            <div class="container">
+                <!-- Italy Map Row -->
+                <div class="row align-items-center justify-content-center">  <!-- no-gutters: no spacing between col-->
+                    <div class="col-lg-11 mx-100" > 
+                        <h2 class="text-center">Map of Italy</h2>
+                        <p class="">Destinations spread across 6 cities: Naples, Capri, Pompeii, Venice, Sardinia and Rome.
+                            <br>You can click on the orange-bordered area of the map to zoom into a specific province, or click on the blue markers to see the details.
+                            
+                        <!--col-xl-8 col-lg-7--> <!-- numbers of the columns can add up to 12(max).-->
+                            <!-- svg: scalable vector graphics; to make the map adjust its size automatically-->
+                        <div id="Mainmap" class="map map-home leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"></div> <!--class="map map-home leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"-->
+                    </div>
+                </div>
+            </div>
+            </section>
+            
+
+
+            <!-- Footer -->
+            <footer class="bg-black small text-center">
+                <div class="container">
+                    <div>
+                            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                            <div class="elfsight-app-c4ab0d61-a444-4a8e-802a-3acacca27e33"></div>
+                    </div>
+                    <b class="abc" style="font-size: 13px">Bizarre Adventure to Italy</b>
+                    <br><p>This website is designed to help you plan your pop-culture tour to Italy featured with the anime JOJO’s Bizarre Adventure: Golden Wind. tbc...</p>
+                    <b class="abc" style="font-size: 13px">Statement</b>
+                    <br><p>This is a student project by Joyce LI for the course COMM5961 of the New Media Programme of the School of Journalism and Communication, CUHK.</p>
+                    <b class="abc" style="font-size: 13px"> Contact</b> <br><p>sendtojoyce630@gmail.com</p>
+                    <p>Copyright &copy; Joyce Website 2019</p>
+                </div>
+            </footer>
+        
+        </div>  <!-- page content #content -->
+    </div>  <!-- #wrapper -->
+
+    <div class="overlay"></div>
+
+
+
+
+    <!-- sidebar jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+   
+
+<!-- downloaded Bootstrap core JavaScript-->
+<script src="js/jquery/jquery.min.js"></script>   <!-- 1 -->
+<script src="js/bootstrap/bootstrap.bundle.min.js"></script>  <!-- 2 -->
+
+
+<!-- Plugin JavaScript (important) -->
+<script src="js/jquery-easing/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+
+
+<!-- Custom scripts for this template -->
+<!--<script src="js/grayscale.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-grayscale/5.0.9/js/grayscale.min.js" integrity="sha256-spj4omdr8o22qWojzXHE4yOp3yAxKZWnJGOTypzvvjw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/italyTopo2.js"></script>  <!-- Italy geojson data -->
+<script src="js/leafletTest5.js"></script> <!-- 这个要放在italyTopo2 的下面哦...-->
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+<!-- sidebar -->
+    <script type="text/javascript">
+    $(document).ready(function () {
+        /* $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        }); */
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myul");
+        var items = header.getElementsByClassName("sidebarItem");
+
+        $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+
+        // Add active class to the current button (highlight it)   
+        for (var i = 0; i < items.length; i++) {
+            items[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+        }
+        
+        // change the navBar style on scroll
+       /* var scroll_pos = 0;
+        $(document).scroll(function() { 
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 80) {
+                $("#mainNav").css('background-color', '#fff');
+                //$(".navbar-brand").css('color', 'black');
+            } else {
+                $("#mainNav").css('background-color', 'rgba(0,0,0,0)');
+               // $(".navbar-brand").css('color', '#fff');
+
+            }
+        }); */
+            
+    });
+    </script>
+
+</body>
+
+</html>
