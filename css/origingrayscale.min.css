@@ -87,10 +87,13 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
   #mainNav ul.breadcrumb-city li{ font-size: 18px;}}
 
  /* masthead */  /* background-size: cover ---> fill the container*/
- .masthead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(92,77,66, 0.6) 0,rgba(136, 77, 1, 0.4) 25%,rgb(41, 33, 28) 100%),url(../img/bg-masthead8.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ #IndexHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(92,77,66, 0.6) 0,rgba(136, 77, 1, 0.4) 25%,rgb(41, 33, 28) 100%),url(../img/bg-masthead8.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #NaplesHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.3) 0,rgba(92,77,66,0.7) 85%,rgb(41, 33, 28) 100%),url(../img/NaplesPic/NaplesHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #CapriHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.1) 0,rgba(92,77,66,0.6) 80%,rgb(41, 33, 28) 100%),url(../img/CapriPic/CapriHeader4.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  #RomeHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(156, 89, 1, 0.2) 0,rgba(92,77,66,0.4) 80%,rgb(41, 33, 28) 100%),url(../img/RomePic/RomeHeader1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ #VeniceHead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom,rgba(150, 85, 0, 0.3) 0,rgba(106, 86, 72, 0.5) 80%,rgb(41, 33, 28) 100%),url(../img/VenicePic/VeniceHeader3.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ #headerCopyright{bottom:0px;width:100%;position:absolute;}
+ #headerCopyrightText{position:absolute}
  .masthead h2,#NaplesHead h2,#CapriHead h2,#RomeHead h2{font-family: 'Alegreya', serif!important;max-width:20rem;font-size:1rem;text-shadow:1px 1px 4px rgba(0, 0, 0, 0.6);color:rgb(235, 235, 235)}
  .masthead h1{font-family: 'Vesper Libre', serif!important;font-size:60px;line-height:4rem;letter-spacing:.3rem; color:#ff8800;text-shadow: 1px 1px 4px rgba(92, 77, 66, 0.8);}
  #cityPageTitle{width:600px}
@@ -198,10 +201,10 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
       h2.City-sectiontitle {font-size:2rem}}
  .cityTipsTitleRow {padding:1.5rem 0 0.5rem 0}
  .cityTipsTitleRow h2{margin-left:10px; position:relative;font-size:24px}
- .fa-sun, .fa-bus, .fa-map-signs{/* position: absolute; */top: 100%;left: -65px;font-size: 32px;width: 60px;margin-top:-5px;padding-right: 10px;text-align: center;color:rgb(67, 155, 161);border-right: 1px dashed rgb(67, 155, 161);float: left;}
+ .fa-sun, .fa-bus, .fa-map-signs, .fa-bug{/* position: absolute; */top: 100%;left: -65px;font-size: 32px;width: 60px;margin-top:-5px;padding-right: 10px;text-align: center;color:rgb(67, 155, 161);border-right: 1px dashed rgb(67, 155, 161);float: left;}
     @media(min-width:576px){
       .cityTipsTitleRow h2{font-size:2rem;margin-left:16px;}
-      .fa-sun, .fa-bus, .fa-map-signs{font-size: 42px;padding-right: 16px;}}
+      .fa-sun, .fa-bus, .fa-map-signs, .fa-bug{font-size: 42px;padding-right: 16px;}}
 
 
  /* index page mymap section */
@@ -280,7 +283,10 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
 
  footer{padding:3rem 0; color:rgba(255,255,255,0.8);font-family:'Baskervville',serif}
  footer .abc {color:white;}
- footer p{font-size:10px}
+ footer p{font-size:10px; margin-bottom:8px}
+ footer .a2a_svg {width:20px;height:20px; margin-bottom:8px}
+    @media(min-width:576px){
+      footer .a2a_svg {width:32px;height:32px}}
 
 
 
