@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153527792-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153527792-1', { 'optimize_id': 'GTM-WKTMW8X'});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KZBMQBH');</script>
+        <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="KEYWORDS" content="意大利, 那不勒斯, 卡布里, 罗马, 威尼斯, 庞贝, Italy, Naples, Capri, Rome, Venice, Pompei, Napoli, Roma, Venezia, Pompeii, Sardegna, 旅游, 圣地巡礼, JOJO, JOJO的奇妙冒险, JOJO的奇妙冒险：黄金之风, 黄金之风, 动漫">
+
+    <title>Bizarre Tour to Italy/Rome</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+   <!-- √ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">-->
+
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/8d2becaf44.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Crimson+Pro:200,800|EB+Garamond:400,600&display=swap" rel="stylesheet">
+
+
+<!-- leaflet CSS and js -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+crossorigin=""></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://unpkg.com/topojson@3"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+
+<!-- chart d3 c3-->
+<!--<link rel="stylesheet" href="/path/to/c3.css">-->
+<link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style3copy.css">
+    <link href="css/origingrayscale.min.css" rel="stylesheet">
+
+
+
+ <!-- Custom styles  -->
+<!--  <link href="css/grayscale.min.css" rel="stylesheet"> -->
+
+
+</head>
+
+<body id="page-top">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZBMQBH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <div id="slide-out" class="side-nav sn-bg-4 ">  <!-- fixed-top -->
+        <nav id="sidebar" class="sticky-top sticky-offset">
+            <div id="dismiss"  class="side-nav sn-bg-4 fixed">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                    <img class="img-fluid" id="sidebarLogo" src="img/Logo.svg" >
+            </div>
+            <ul class="components" id="myul" align="center">
+
+                <li>
+
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Index.html">Home</a>  <!-- active:highlight current page item-->
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Naples.html">Naples</a>
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Capri.html">Capri</a>
+                    <a class="sidebarItem" href="#">Venice</a>
+                    <a class="sidebarItem" href="#">Sardinia</a>
+                    <a class="sidebarItem active" href="BizarreTourtoItaly_Rome.html">Rome</a>
+                </li>
+                
+            </ul>  <!-- end sidebar list-->
+
+        </nav>  <!-- #sidebar -->
+        </div>  <!-- id="slide-out" class="side-nav sn-bg-4 fixed-top" -->
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" > <!-- class= ... navbar-toggleable-md scrolling-navbar double-nav -->
+                <div class="container" id="navContainer"> <!-- class... container-fluid -->
+
+                    <div id="sidebarCollapse" class="navbar-header">  <!-- 加hover -->
+                        <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><span><i class="fas fa-align-left"></i></span></a>
+                    </div>
+
+                    <ul class="breadcrumb-city">
+                        <li><a href="BizarreTourtoItaly_Index.html">Home</a></li>
+                        <li><a href="#top">Rome</a></li>
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">                        
+                        Menu
+                    </button>
+                    <!--<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>-->
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">  <!-- class= nav ... -->
+                            <li class="nav-item">   <!-- class="nav-item active" -->
+                                <a class="nav-link js-scroll-trigger" href="#intro">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#destinations">Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#restaurants">Restaurants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#usefulTips">Useful Tips</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    
+                </div>  <!-- end #navContainer-->
+            </nav>
+
+
+            <!-- Header -->
+            <header class="masthead" id="RomeHead">
+                <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <img src="img/RomeHead.svg" id="cityPageTitle" class="img-fluid">
+                    <h2 class="mx-auto mt-4 mb-5">Pop-Culture Tour Of The Anime <br>JOJO's Bizarre Adventure: Golden Wind</h2>
+                    <a href="#intro" class="btn btn-primary js-scroll-trigger">Welcome to Rome!</a> 
+                    <!--<div class="startWrapper">
+                    <a href="#gallery" class="startbtn js-scroll-trigger" style="background-image: url(getStartBtn.svg); background-repeat: no-repeat;padding:px;max-width: 100%;background-size: cover;color:honeydew">Get Started</a>
+                    </div> -->
+                </div>
+                </div>
+            </header>
+
+            <!-- Intro Section -->
+            <section id="intro" class="intro-section">
+                <div class="container">
+                    
+                    <div class="row align-items-center justify-content-center no-gutters mb-4 mb-lg-5">
+                        <h4 id="cityWelcomeh4">Welcome to Rome</h4>
+                    </div>
+                    <div class="row cityIntroduction">
+                        <p class="" mb-0">
+                            A heady mix of haunting ruins, awe-inspiring art and vibrant street life, Italy’s hot-blooded capital is one of the world’s most romantic and charismatic cities. Exploring the city center by foot surrounded by glorious monuments and colossal remains takes you back in time to the “glory that was Rome”.                        
+                        </p>
+                        <span id="MoreText">
+                        <h6>History</h6>
+                        <p class="" mb-0">
+                            The result of 3000 years of ad hoc urban development, Rome's cityscape is an exhilarating sight. 
+                            Ancient icons such as <span style="color:#f4623a">the Colosseum, Roman Forum and Pantheon</span> recall the city’s golden age as caput mundi (capital of the world), while <span style="color:#f4623a">monumental basilicas</span> tell of its history as seat of the Catholic Church. 
+                        </p>
+                        <p class="" mb-0">
+                            Lording it over the skyline, <span style="color:#f4623a">St Peter’s Basilica towers</span> over the Vatican, testifying to the ambition of Rome’s Renaissance popes and the genius of its game-changing architects. Elsewhere, <span style="color:#f4623a">ornate piazzas and showy fountains</span> add a baroque flourish to the city's captivating streets.                        
+                        </p>
+                        <h6>Art</h6>
+                        <p class="" mb-0">
+                            Throughout history, the city has starred in the great upheavals of Western art. 
+                            The result is a city awash with priceless treasures. 
+                        </p>
+                        <p class="" mb-0">
+                            Ancient statues adorn world-class museums; Byzantine mosaics and Renaissance frescoes dazzle in art-rich churches; baroque facades flank medieval piazzas. 
+                            Stroll through the center and without even trying you’ll come across masterpieces – sculptures by <span style="color:#f4623a">Michelangelo</span>, paintings by <span style="color:#f4623a">Caravaggio</span>, frescoes by Raphael and fountains by <span style="color:#f4623a">Bernini</span>.                        
+                        </p>
+                        <h6>Life in Rome</h6>
+                        <p class=""  mb-0">
+                            A trip to Rome is as much about lapping up the "dolce vita" lifestyle as gorging on art and culture. Idling around <span style="color:#f4623a">picturesque streets</span>, whiling away hours at <span style="color:#f4623a">street side cafes</span>, people-watching on <span style="color:#f4623a">pretty piazzas</span> – these are all central to the Roman experience. 
+                        </p>
+                        <p class=""  mb-0">
+                            The tempo rises in the evening when fashionable drinkers descend on the city’s bars and cafes for a sociable aperitivo (drink with snacks) and trattorias hum with activity.                     
+                        </p>
+                        </span><!-- end #MoreText -->
+                        <div class="btn-container More-btn text-center">
+                            <button id="Moretoggle">Read More</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            
+            
+            
+             <!-- Destinations Section -->
+             <section id="destinations" class="destinations-section text-center bg-light">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="column">
+                            <h2 class="City-sectiontitle">Destinations Appeared in JOJO </h2>
+                            <!-- <p class="text-black text-center" > introduction tbc... </p> -->
+                        </div>
+                    </div>
+
+                    <div class="card-deck align-items-start">
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Rome_DestinationRo1.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/RomePic/AltaredellaPatria1.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Altare della Patria </p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Rome_DestinationRo2.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/RomePic/TrajansMarket2.jpeg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Torre delle Milizie</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Rome_DestinationRo3.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/RomePic/Colosseo1-1.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Colosseo and Arco di Costantino</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Rome_DestinationRo4.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/RomePic/Tiber1.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Fiume Tevere</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Rome_DestinationRo5.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/RomePic/CastelSantAngelo1.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Castel Sant’Angelo and Ponte Sant’Angelo</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                    </div>  <!-- end card-deck -->
+
+                        <div class="row align-items-center">
+                            <div class="col-lg-12 mx-100" style="margin-top:2rem">
+                                <h2 class="City-sectiontitle">Other Worth Visiting Sights</h2>
+                                <iframe class="airtable-embed" src="https://airtable.com/embed/shrsIgWPuXpCLjlKA?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid rgb(123, 123, 123);"></iframe>
+                            </div>
+                        </div><!-- end other destinations -->
+
+                </div>  <!-- end .container -->
+            </section>
+
+            <!-- Gallery-restaurant Section -->
+            <section id="restaurants" class="restaurants-section text-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                    <div class="col-lg-12 mx-100">
+                        <h2 class="City-sectiontitle">Restaurants in Rome</h2>
+                        <p class="text-black"  style="opacity: 0.9;"> Tips: Somes restaurants offer food appeared in the anime! You can click on the gallery to view the details.</p>
+                        <iframe class="airtable-embed" src="https://airtable.com/embed/shrWJnnqaHdEJuypY?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid rgb(123, 123, 123);"></iframe>                        
+                    </div>
+                    </div>
+                </div>
+            </section>
+                
+
+            <!-- cityMaps Section -->
+            <section id="cityMap" class="cityMap-section bg-light">
+                <div class="container">
+                <!-- Naples Map Row -->
+                <div class="row align-items-center mb-4 mb-lg-5">  <!-- no-gutters: no spacing between col-->
+                    <div class="col-xl-2 col-lg-4" id="titleAndbtn">
+                    <div class="text-center" > <!-- text-lg-left: sets the text alignment to left when the viewport size >992px(lg)-->
+                        <div><h2 class="text-center">Map of Rome</h2></div>
+                        <div><button type="button" class="btn-lg btn-warning align-items-center" id="destinationsbtn" onclick="show_destinations();">Show Destinations in JOJO</button></div>
+                        <br>
+                        <div><button type="button" class="btn-lg btn-warning align-items-center" id="otherdestinationbtn" onclick="show_otherdes();">Show Other Sights</button></div>
+                        <br>
+                        <div><button type="button" class="btn-lg btn-warning align-items-center" id="restaurantbtn" onclick="show_restaurants();">Show Restaurants</button></div>
+                    </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-8" >  <!--col-xl-8 col-lg-7--> <!-- numbers of the columns can add up to 12(max).-->
+                        <!-- svg: scalable vector graphics; to make the map adjust its size automatically-->
+                        <div id="Romemap" class="map map-home leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"></div> <!--class="map map-home leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"-->
+                    </div>
+                </div>
+                </div>
+            </section>
+
+
+            <!-- Useful tips Section -->
+            <section id="usefulTips" class="usefulTips-section">
+            <div class="container" >
+                <div class="row align-items-center no-gutters justify-content-start cityTipsTitleRow">
+                    <i class="fas fa-sun"></i> 
+                    <h2 class="text-center">Weather</h2>
+                </div>
+                <div class="row no-gutters align-items-center justify-content-center cityTipsContentRow">
+                    <div class="col-xl-7 col-lg-6">
+                            <a class="weatherwidget-io" href="https://forecast7.com/en/41d9012d50/rome/" data-label_1="ROME" data-label_2="Weather Forecast" data-font="Jura" data-days="5" data-theme="beige" data-shadow="rgba(255, 255, 255, 0)" data-accent="rgba(160, 137, 54, 0.08)" data-suncolor="#ffbc34" data-mooncolor="#6c8380" data-cloudcolor="#a49a86" data-raincolor="#6c8380" >ROME Weather Forecast</a>
+                            <script>
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                            </script>
+                            <p class="text-right" style="color:cadetblue; margin-bottom:0rem!important;font-size: 12px;">powered by <a href="https://weatherwidget.io/" target="_blank" style="color:darkcyan">Weather Widget</a> </p>
+                          <!--  <button type="button" class="btn-sm btn-warning align-items-center" id="climatebtn">Show Climate</button>  -->
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <p id="chartTitle" class="text-center" style="margin-bottom:0px!important;color:cadetblue;">Climate</p>
+                        <div id="RomeclimateChart" class="c3" style="position: relative; height:200px"></div>
+                        <p class="text-center" style="color:cadetblue; margin-bottom:0rem!important;font-size: 12px;"> <a href="https://www.weather-atlas.com/zh/italy/rome-climate" target="_blank" style="color:darkcyan">Source: weather-atlas.com</a> </p>
+                    </div>
+                </div>  
+            </div><!-- end weather -->
+
+            <div class="container" >
+                <div class="row align-items-center no-gutters cityTipsTitleRow" >  <!-- mb-4 mb-lg-5 -->
+                    <i class="fas fa-bus"></i>
+                    <h2 class="text-center ">Transportation</h2>
+
+                </div>
+                <div class="row no-gutters align-items-center justify-content-center cityTipsContentRow">
+                    <div class="col-xl-10 col-lg-10">
+                        <p style="text-indent:2em">
+                            A very cheap ticket allows you to use almost all means of public transport in Rome with the exception of taxis and airport transport. Buses, subway trains, trams (streetcars), and urban railway are operated by the same company called <b>ATAC</b>. You can hop on any of their transport <b>using the same ticket</b>.
+                        </p>
+                        <p style="text-indent:2em">
+                            The public ransportation here is cheap and there’s a lot of it. But the bad news is it can be slow and subject to delays and strikes.
+                        </p>
+                        <p style="text-indent:2em">
+                            Where to buy tickets? Tickets are available from machines at all Metro stations. But beware: <b> they never dispense more than €6 in change </b>(resto)! The machine will happily eat your €20 bill but won’t give any of it back until you’ve bought €14 worth of tickets. you can also buy these tickets in most <b>tabacchi</b> – tobacco stores, distinguished by the “T” sign outside.
+                        </p>
+                        <p style="text-indent:2em">
+                        You can buy these kinds of tickets:
+                        </p>
+                        <p><ul>
+                            <li><b>100 minutes</b>: Probably the best value for money for individual trips, this gives you just over 1 and a half hours to use ANY mean¬s of transport mentioned above (although it only allows one ride on the Metro), for the teensy price of €1.50. Note that these are the standard tickets available from the tabaccaio.</li>
+                            <li><b>Day ticket</b>: €7. Valid for unlimited metro, bus, and train travel within Rome for 24 hours from validation. But not recommended. It expires at midnight of the day you buy it. It’s only good value if you take at least five journeys more than 100 minutes apart, which is probably unlikely.</li>
+                            <li><b>48 hour</b>: €12.50 / <b>72 hour</b>: €18. valid for unlimited metro, bus, and train travel within Rome for 48 hours/ 72 hours from validation.</li>
+                            <li><b><a href="http://www.romapass.it/" target="_blank">Roma Pass</a></b>: €42.00. If you need transport for three days and are sightseeing too then it’s probably worth considering a Roma Pass instead. The Roma Pass card is a tourist card that gives you reduced-price tickets to the <b>major attractions</b> in the city and unlimited use of the <b>public transport</b> for 48 or 72 hours, depending on the card you purchase.</li>                        
+                        </ul></p>
+                        <p style="text-indent:2em">
+                            Click <b><a href="https://www.rometoolkit.com/mnu/rome_public_transport.htm" target="_blank"> here</a> </b>to view more detailed instruction of public transportation in Rome.
+                        </p>
+                    </div>
+                </div> <!-- end row -->
+
+            </div> <!-- end transportation -->
+
+            <!--recommended route-->
+        <!--   <div class="container" >
+
+                <div class="row align-items-center no-gutters cityTipsTitleRow">  
+                    <i class="fas fa-map-signs"></i>
+                    <h2 class="text-center">Recommended Route</h2>
+                </div>
+                <div class="row no-gutters align-items-center justify-content-center cityTipsContentRow">
+                    <div class="col-xl-10 col-lg-9">
+                            
+                    </div>
+                </div>
+            </div> -->    <!-- end route -->
+
+            </section>
+
+
+
+            <!-- Footer -->
+            <footer class="bg-black small text-center">
+                <div class="container">
+                    <div>
+                        <div class="row justify-content-center align-items-center"><!-- AddToAny BEGIN -->
+                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                            <a class="a2a_button_facebook"></a>
+                            <a class="a2a_button_twitter"></a>
+                            <a class="a2a_button_reddit"></a>
+                            <a class="a2a_button_sina_weibo"></a>
+                            <a class="a2a_button_wechat"></a>
+                            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                            </div>
+                            <script async src="https://static.addtoany.com/menu/page.js"></script>
+                        </div><!-- AddToAny END -->
+                    </div>
+                    <b class="abc" style="font-size: 13px">Bizarre Adventure to Italy</b>
+                    <br><p>This website is designed to help you plan your pop-culture tour to Italy featured with the anime JOJO’s Bizarre Adventure: Golden Wind. tbc...</p>
+                    <b class="abc" style="font-size: 13px">Statement</b>
+                    <br><p>This is a student project by Joyce LI for the course COMM5961 of the New Media Programme of the School of Journalism and Communication, CUHK.</p>
+                    <b class="abc" style="font-size: 13px"> Contact</b> <br><p>sendtojoyce630@gmail.com</p>
+                    <p>Copyright &copy; Joyce Website 2019</p>
+                </div>
+            </footer>
+        
+        </div>  <!-- page content #content -->
+    </div>  <!-- #wrapper -->
+
+
+
+    <div class="overlay"></div>
+
+
+    
+
+    <!-- sidebar jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+
+<!-- downloaded Bootstrap core JavaScript-->
+<script src="js/jquery/jquery.min.js"></script>   <!-- 1 -->
+<script src="js/bootstrap/bootstrap.bundle.min.js"></script>  <!-- 2 -->
+
+
+<!-- Plugin JavaScript (important) -->
+<script src="js/jquery-easing/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+
+
+<!-- Custom scripts for this template -->
+<!--<script src="js/grayscale.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-grayscale/5.0.9/js/grayscale.min.js" integrity="sha256-spj4omdr8o22qWojzXHE4yOp3yAxKZWnJGOTypzvvjw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/italyTopo2.js"></script>  <!-- Italy geojson data -->
+<script src="js/RomeMapChart.js"></script> <!-- 这个要放在italyTopo2 的下面哦...-->
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        // read more button
+        $("#Moretoggle").click(function() {
+            var elem = $("#Moretoggle").text();
+            if (elem == "Read More") {
+            //Stuff to do when btn is in the read more state
+                $("#Moretoggle").text("Read Less");
+                $("#MoreText").slideDown();
+            } else {
+            //Stuff to do when btn is in the read less state
+                $("#Moretoggle").text("Read More");
+                $("#MoreText").slideUp();
+            }
+        });
+    });
+
+</script>    
+
+<!-- sidebar -->
+    <script type="text/javascript">
+$(document).ready(function () {
+        /* $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        }); */
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myul");
+        var items = header.getElementsByClassName("sidebarItem");
+
+        $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+
+        // Add active class to the current button (highlight it)   
+        for (var i = 0; i < items.length; i++) {
+            items[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+        }
+        
+        // change the navBar style on scroll
+       /* var scroll_pos = 0;
+        $(document).scroll(function() { 
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 80) {
+                $("#mainNav").css('background-color', '#fff');
+                //$(".navbar-brand").css('color', 'black');
+            } else {
+                $("#mainNav").css('background-color', 'rgba(0,0,0,0)');
+               // $(".navbar-brand").css('color', '#fff');
+
+            }
+        }); */
+            
+// cityMap button -->
+
+
+});// end ready
+ </script>
+</body>
+
+</html>

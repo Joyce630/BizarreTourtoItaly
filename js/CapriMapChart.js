@@ -30,7 +30,6 @@ $.getJSON(airtable_read_endpoint, function(result) {
         items = {};
         items["Destination"]=value.fields.Destination;   //no space when naming the fields. 
         items["picUrl"]=value.fields.picUrl; 
-        items["DestinationLink"]=value.fields.DestinationLink;
         items["DesPageLink"]=value.fields.DesPageLink;
         items["lat"]=value.fields.lat; 
         items["lng"]=value.fields.lng; 

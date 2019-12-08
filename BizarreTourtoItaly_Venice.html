@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153527792-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153527792-1', { 'optimize_id': 'GTM-WKTMW8X'});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KZBMQBH');</script>
+        <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="KEYWORDS" content="意大利, 那不勒斯, 卡布里, 罗马, 威尼斯, 庞贝, Italy, Naples, Capri, Rome, Venice, Pompei, Napoli, Roma, Venezia, Pompeii, Sardegna, 旅游, 圣地巡礼, JOJO, JOJO的奇妙冒险, JOJO的奇妙冒险：黄金之风, 黄金之风, 动漫">
+
+    <title>Bizarre Tour to Italy/Venice</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+   <!-- √ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">-->
+
+
+    <!-- Font Awesome JS & fonts-->
+    <script src="https://kit.fontawesome.com/8d2becaf44.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Crimson+Pro:200,800|EB+Garamond:400,600&display=swap" rel="stylesheet">
+
+<!-- leaflet CSS and js -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+crossorigin=""></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://unpkg.com/topojson@3"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+
+<!-- chart d3 c3-->
+<!--<link rel="stylesheet" href="/path/to/c3.css">-->
+<link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style3copy.css">
+    <link href="css/origingrayscale.min.css" rel="stylesheet">
+
+
+
+ <!-- Custom styles  -->
+<!--  <link href="css/grayscale.min.css" rel="stylesheet"> -->
+
+
+</head>
+
+<body id="page-top">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZBMQBH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <div id="slide-out" class="side-nav sn-bg-4 ">  <!-- fixed-top -->
+        <nav id="sidebar" class="sticky-top sticky-offset">
+            <div id="dismiss"  class="side-nav sn-bg-4 fixed">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <img class="img-fluid" id="sidebarLogo" src="img/Logo.svg">
+            </div>
+            <ul class="components" id="myul" align="center">
+                
+                <li>
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Index.html">Home</a>  <!-- active:highlight current page item-->
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Naples.html">Naples</a>
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Capri.html">Capri</a>
+                    <a class="sidebarItem active" href="BizarreTourtoItaly_Venice.html">Venice</a>
+                    <a class="sidebarItem" href="#">Sardinia</a>
+                    <a class="sidebarItem" href="BizarreTourtoItaly_Rome.html">Rome</a>
+                </li>
+                
+            </ul>  <!-- end sidebar list-->
+
+        </nav>  <!-- #sidebar -->
+        </div>  <!-- id="slide-out" class="side-nav sn-bg-4 fixed-top" -->
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" > <!-- class= ... navbar-toggleable-md scrolling-navbar double-nav -->
+                <div class="container" id="navContainer"> <!-- class... container-fluid -->
+
+                    <div id="sidebarCollapse" class="navbar-header">  <!-- 加hover -->
+                        <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><span><i class="fas fa-align-left"></i></span></a>
+                    </div>
+
+                    <ul class="breadcrumb-city">
+                        <li><a href="BizarreTourtoItaly_Index.html">Home</a></li>
+                        <li><a href="#top">Venice</a></li>
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">                        
+                        Menu
+                    </button>
+                    <!--<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>-->
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto text-center">  <!-- class= nav ... -->
+                            <li class="nav-item">   <!-- class="nav-item active" -->
+                                <a class="nav-link js-scroll-trigger" href="#intro">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#destinations">Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#restaurants">Restaurants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#usefulTips">Useful Tips</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    
+                </div>  <!-- end #navContainer-->
+            </nav>
+
+
+            <!-- Header -->
+            <header class="masthead" id="VeniceHead">
+                <div class="container d-flex h-100 align-items-center">
+                    <div class="mx-auto text-center">
+                        <img src="img/VeniceHead.svg" id="cityPageTitle" class="img-fluid">
+                        <h2 class="mx-auto mt-4 mb-5">Pop-Culture Tour Of The Anime <br>JOJO's Bizarre Adventure: Golden Wind</h2>
+                        <a href="#intro" class="btn btn-primary js-scroll-trigger">Welcome to Venice!</a> 
+                        <!--<div class="startWrapper">
+                        <a href="#gallery" class="startbtn js-scroll-trigger" style="background-image: url(getStartBtn.svg); background-repeat: no-repeat;padding:px;max-width: 100%;background-size: cover;color:honeydew">Get Started</a>
+                        </div> -->
+                    </div>
+                </div>
+            </header>
+
+            <!-- Intro Section -->
+            <section id="intro" class="intro-section">
+                <div class="container">
+                    
+                    <div class="row align-items-center justify-content-center ">
+                        <h4 id="cityWelcomeh4">Welcome to Venice</h4>
+                    </div>
+                    <div class="article cityIntroduction">
+                        <p class="" mb-0">
+                            Imagine the audacity of building a city of marble palaces on a lagoon – and that was only the start.
+                        </p>
+                        <span id="MoreText">
+                        <h6>Epic Grandeur</h6>
+                        <p class="" mb-0">
+                            Never was a thoroughfare so aptly named as the Grand Canal, reflecting the glories of centuries of Venetian architecture in the 50 palazzi and six churches lining its banks. 
+                            At the end of Venice’s signature S-shaped waterway, the <span style="color:#f4623a">Palazzo Ducale </span>and <span style="color:#f4623a">Basilica di San Marco</span> add double exclamation points. But wait until you see what’s hiding in the narrow backstreets: neighborhood churches lined with priceless marbles, convents graced with ethereal Bellinis, Tiepolo’s glimpses of heaven on homeless-shelter ceilings, and a single Titian painting that mysteriously lights up an entire basilica.
+                        </p>
+                        <h6>Venetian Feasts</h6>
+                        <p class="" mb-0">
+                            <span style="color:#f4623a">Garden islands and lagoon aquaculture</span> yield <span style="color:#f4623a">speciality produce and seafood</span> you won’t find elsewhere – all highlighted in inventive Venetian cuisine, with tantalizing traces of ancient spice routes. The city knows how to put on a royal spread, as France’s King Henry III once found out when faced with 1200 dishes and 200 bonbons. 
+                            Today such feasts are available in miniature at happy hour, when <span style="color:#f4623a">bars</span> mount lavish spreads of <span style="color:#f4623a">cicheti</span> (Venetian tapas). Save time for a proper sit-down Venetian meal, with lagoon seafood to match views at <span style="color:#f4623a">canalside bistros</span>.
+                        </p>
+                        <h6>An Artful Lifestyle</h6>
+                        <p class=""  mb-0">
+                            Pity the day trippers dropped off at San Marco with a mere three hours to take in Venice. 
+                            That’s about enough time for one long gasp at the show-stopper that is Piazza San Marco, but not nearly enough time to see what else Venice is hiding. 
+                            Stay longer in this fairy-tale city and you’ll discover the pleasures of la bea vita (the beautiful life) that only locals know: the wake-up call of <span style="color:#f4623a">the gondoliers' ‘Ooooeeeee!’</span>, <span style="color:#f4623a">a morning spritz</span> in a sunny campo (square), lunch in a crowded <span style="color:#f4623a">bacaro</span> (bar) with friends and fuschia-pink <span style="color:#f4623a">sunsets</span> that have sent centuries of artists mad.
+                        </p>
+                        </span> <!-- end #MoreText -->
+                        <div class="btn-container More-btn text-center">
+                            <button id="Moretoggle">Read More</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            
+            
+            <!-- Destinations Section -->
+             <section id="destinations" class="destinations-section text-center bg-light">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="column">
+                            <h2 class="City-sectiontitle">Destinations Appeared in JOJO </h2>
+                            <!-- <p class="text-black text-center" > introduction tbc... </p> -->
+                        </div>
+                    </div>
+
+                    <div class="card-deck align-items-start">
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Venice_DestinationVe1.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/VenicePic/PiazzaSanMarco1.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                    <!--<div class="desimgOverlay"></div>--> 
+                                    <!--<div class="imgText">View Details</div>-->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Piazzetta di San Marco</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Venice_DestinationVe2.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/VenicePic/SantaLucia1.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                    <!--<div class="desimgOverlay"></div>--> 
+                                    <!--<div class="imgText">View Details</div>-->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Stazione di Venezia Santa Lucia</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Venice_DestinationVe3.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/VenicePic/SanGiorgioMaggiore3.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                    <!--<div class="desimgOverlay"></div>--> 
+                                    <!--<div class="imgText">View Details</div>-->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Chiesa Di San Giorgio Maggiore</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Venice_DestinationVe4.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/VenicePic/LibertyBridge1.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                    <!--<div class="desimgOverlay"></div>--> 
+                                    <!--<div class="imgText">View Details</div>-->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Ponte della Libertà</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Venice_DestinationVe5.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/VenicePic/CanaleGrande3.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                    <!--<div class="desimgOverlay"></div>--> 
+                                    <!--<div class="imgText">View Details</div>-->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Canale Grande</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="BizarreTourtoItaly_Venice_DestinationVe7.html" target="_blank">
+                                <div class="desImg-wrapper">
+                                    <img  src="img/VenicePic/DaRaffaele1.jpg" class="card-img-top img-fluid desImg">  <!-- alt="destination name" -->
+                                    <!--<div class="desimgOverlay"></div>--> 
+                                    <!--<div class="imgText">View Details</div>-->
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-title">Ristorante Da Raffaele</p>  <!-- class="desImgTitle"  -->
+                            </div>
+                        </div> <!-- end card -->
+                        </div>
+                        
+
+
+                    </div>  <!-- end card-deck -->
+
+                        <div class="row align-items-center">
+                            <div class="col-lg-12 mx-100" style="margin-top:2rem">
+                                <h2 class="City-sectiontitle">Other Worth Visiting Sights</h2>
+                                <iframe class="airtable-embed" src="https://airtable.com/embed/shrbpXmj6iyHf7V3O?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid rgb(123, 123, 123);"></iframe>
+                            </div>
+                        </div><!-- end other destinations -->
+
+                </div>  <!-- end .container -->
+            </section>
+
+
+            <!-- Gallery-restaurant Section -->
+            <section id="restaurants" class="restaurants-section text-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                    <div class="col-lg-12 mx-100">
+                        <h2 class="City-sectiontitle">Restaurants in Venice</h2>
+                        <p class="text-black"  style="opacity: 0.9;"> Tips: Somes restaurants offer food appeared in the anime! You can click on the gallery to view the details.</p>
+                        <iframe class="airtable-embed" src="https://airtable.com/embed/shrzyvle5wchDApUw?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid rgb(123, 123, 123);"></iframe>                        
+                    </div>
+                    </div>
+                </div>
+            </section>
+                
+
+            <!-- cityMaps Section -->
+            <section id="cityMap" class="cityMap-section bg-light">
+                <div class="container">
+                <!-- Naples Map Row -->
+                <div class="row align-items-center mb-4 mb-lg-5">  <!-- no-gutters: no spacing between col-->
+                    <div class="col-xl-2 col-lg-4" id="titleAndbtn">
+                    <div class="text-center" > <!-- text-lg-left: sets the text alignment to left when the viewport size >992px(lg)-->
+                        <div><h2 class="text-center">Map of Venice</h2></div>
+                        <div><button type="button" class="btn-lg btn-warning align-items-center" id="destinationsbtn" onclick="show_destinations();">Show Destinations in JOJO</button></div>
+                        <br>
+                        <div><button type="button" class="btn-lg btn-warning align-items-center" id="otherdestinationbtn" onclick="show_otherdes();">Show Other Sights</button></div>
+                        <br>
+                        <div><button type="button" class="btn-lg btn-warning align-items-center" id="restaurantbtn" onclick="show_restaurants();">Show Restaurants
+                        </button></div>
+                    </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-8" >  <!--col-xl-8 col-lg-7--> <!-- numbers of the columns can add up to 12(max).-->
+                        <!-- svg: scalable vector graphics; to make the map adjust its size automatically-->
+                        <div id="Naplesmap" class="map map-home leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" ></div> <!--class="map map-home leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"-->
+                    </div>
+                </div>
+                </div>
+            </section>
+
+
+            <!-- Useful tips Section -->
+            <section id="usefulTips" class="usefulTips-section">
+            <div class="container" >
+                <div class="row align-items-center no-gutters justify-content-start cityTipsTitleRow">
+                    <i class="fas fa-sun"></i> 
+                    <h2 class="text-center">Weather</h2>
+                </div>
+                <div class="row no-gutters align-items-center justify-content-center cityTipsContentRow">
+                    <div class="col-xl-7 col-lg-6">
+                            <a class="weatherwidget-io" href="https://forecast7.com/en/45d4412d32/venice/" data-label_1="VENICE" data-label_2="Weather Forecast" data-font="Jura" data-days="5" data-theme="beige" data-shadow="rgba(255, 255, 255, 0)" data-accent="rgba(160, 137, 54, 0.08)" data-suncolor="#ffbc34" data-mooncolor="#6c8380" data-cloudcolor="#a49a86" data-raincolor="#6c8380" >NAPLES Weather Forecast</a>
+                            <script>
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                            </script>
+                            <p class="text-right" style="color:cadetblue; margin-bottom:0rem!important;font-size: 12px;">powered by <a href="https://weatherwidget.io/" target="_blank" style="color:darkcyan">Weather Widget</a> </p>
+                          <!--  <button type="button" class="btn-sm btn-warning align-items-center" id="climatebtn">Show Climate</button>  -->
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <p id="chartTitle" class="text-center" style="margin-bottom:0px!important;color:cadetblue;">Climate</p>
+                        <div id="VEclimateChart" class="c3" style="position: relative; height:200px"></div>
+                        <p class="text-center" style="color:cadetblue; margin-bottom:0rem!important;font-size: 12px;"> <a href="https://www.weather-atlas.com/zh/italy/naples-climate" target="_blank" style="color:darkcyan">Source: weather-atlas.com</a> </p>
+                    </div>
+                </div>  
+            </div><!-- end weather -->
+
+            <div class="container" >
+                <div class="row align-items-center no-gutters cityTipsTitleRow" >  <!-- mb-4 mb-lg-5 -->
+                    <i class="fas fa-bus"></i>
+                    <h2 class="text-center ">Transportation</h2>
+
+                </div>
+                <div class="row no-gutters align-items-center justify-content-center cityTipsContentRow">
+                    <div class="col-xl-10 col-lg-10">
+                        <p style="text-indent:2em">
+                            For the visitor to Venice you have 2 options to get around, <b>walk</b> or <b>by water</b>. 
+                        </p>
+                        <p style="text-indent:2em">
+                            Venice is compact and walkable. You will discover small alleys and bridges that make the city romantic. In order not to get lost, get a guidebook with a good map of Venice.
+                        </p>
+                        <p style="text-indent:2em">
+                            If you don't want to walk, you can choose one of the 159 types of water-craft (<b>vaporetto</b>, motorboats, battelli foranei which are a larger type of vaporetto used for transportation to outer islands, motor vessels or ferry ships) to get around. <b>ACTV</b> is the public transport authority for Venice. Here is the map of <a href="http://actv.avmspa.it/sites/default/files/mappa_linee_di_navigazione_NOV_2018_WEB.PDF" target="_blank">water transportation routes</a>.
+                            You can buy tickets for 1, 2, 3 or 7 day durations or a single ticket: 
+                        </p>
+                        <p><ul>
+                            <li><b>1 Day Travelcard</b>: €20 </li>
+                            <li><b>2 Day Travelcard</b>: €30 </li>
+                            <li><b>3 Day Travelcard</b>: €40 </li>
+                            <li><b>7 Day Travelcard</b>: €60</li>
+                            <li><b>A Single Ticket</b>: €7.5 (allows up to 75 minutes on water network)</li>                       
+                        </ul></p>
+                        <p style="text-indent:2em">
+                            <b>Gondola</b> costs during daytime about €80 for a ride of 40 minutes. 
+                            With a maximum capacity of 6 passengers. In the evening and at night it costs €100. This gondola ride does not include a serenade or a tip. 
+                            A <b>Traghetto</b> is a public gondola crossing the Grand Canal. A small pound to crossover. For tourists, it costs approximately EUR 2.00 each time. The Traghetto boarding places are found along the Grand Canal 7 times.                        
+                        </p>
+                        <p style="text-indent:2em">
+                            A <b>water taxi</b> costs €9, + €1.80 per minute. They charge €6 extra if they have to pick you up at your hotel at night and luggage. TIP: before you get in a water taxi, you have to negotiate the price.
+                        </p>
+                        <p style="text-indent:2em">
+                            Venice also has a <b>bus network</b>. ACTV and ATVO buses leave from Piazzale Roma for the Mainland, Mestre and its city centre, the Venice Marco Polo airport, and the Treviso Canova airport. For bus times: <a href="http://www.actv.it/pdf/urbano/U-15.pdf" target="_blank">line 15</a>, <a href="http://www.actv.it/pdf/urbano/U-45.pdf" target="_blank">line 45</a> and <a href="http://www.actv.it/pdf/urbano/U-5.pdf" target="_blank">line 5</a>-aerobus. ACTV has two night-time lines for Mestre. Details of times and lines <a href="http://www.actv.it/pdf/UM/U-N1.pdf" target="_blank"> N1</a> and <a href="http://www.actv.it/pdf/UM/U-N2.pdf" target="_blank">N2</a>.
+                        </p>
+                        <p style="text-indent:2em">
+                            Tips for money saving:
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can buy <b><a href="https://www.veneziaunica.it/en/e-commerce/services" target="_blank">Venezia Unica City Pass</a></b> online. It is an all-in-one pass to use for public transportation, admission to tourist attractions and cultural events in the city, and many other useful services. You need to choose what kind of pass you need.
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you are between 6 and 29 years of ages, you can buy <b><a href="https://www.veneziaunica.it/en/content/rolling-venice" target="_blank">Rolling Venice</a></b>, - a special card that not only gives you information about the city, but also allows you to buy a 3 day tourist ticket at a reduced rate. You also have access to a series of discounts offered by more than 200 commercial enterprises and cultural offices in Venice. You can purchase the Rolling Venice <a href="https://www.veneziaunica.it/en/e-commerce/services?macrofamily=2&family=2" target="_blank">online</a> or at <a href="http://tripplanner.veneziaunica.it/en" target="_blank">Venezia Unica ticket points</a>.
+                            
+                        </p>
+                        <p style="text-indent:2em">
+                            Click <b><a href="https://www.veneziaunica.it/en/content/public-transport" target="_blank">here</a></b> to get more detailed information public transportation in Venice.
+                        </p>
+
+                    </div>
+                </div> 
+            </div> <!-- end transportation -->
+
+            <!--recommended route-->
+        <!--    <div class="container" >
+
+                <div class="row align-items-center no-gutters cityTipsTitleRow">  
+                    <i class="fas fa-map-signs"></i>
+                    <h2 class="text-center">Recommended Route</h2>
+                </div>
+                <div class="row no-gutters align-items-center justify-content-center cityTipsContentRow">
+                    <div class="col-xl-10 col-lg-9">
+                            
+                    </div>
+                </div>
+            </div> -->  <!-- end route -->
+
+            </section>
+
+
+
+            <!-- Footer -->
+            <footer class="bg-black small text-center">
+                <div class="container">
+                    <div>
+                        <div class="row justify-content-center align-items-center"><!-- AddToAny BEGIN -->
+                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                            <a class="a2a_button_facebook"></a>
+                            <a class="a2a_button_twitter"></a>
+                            <a class="a2a_button_reddit"></a>
+                            <a class="a2a_button_sina_weibo"></a>
+                            <a class="a2a_button_wechat"></a>
+                            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                            </div>
+                            <script async src="https://static.addtoany.com/menu/page.js"></script>
+                        </div><!-- AddToAny END -->
+                    </div>
+                    <b class="abc" style="font-size: 13px">Bizarre Adventure to Italy</b>
+                    <br><p>This website is designed to help you plan your pop-culture tour to Italy featured with the anime JOJO’s Bizarre Adventure: Golden Wind. tbc...</p>
+                    <b class="abc" style="font-size: 13px">Statement</b>
+                    <br><p>This is a student project by Joyce LI for the course COMM5961 of the New Media Programme of the School of Journalism and Communication, CUHK.</p>
+                    <b class="abc" style="font-size: 13px"> Contact</b> <br><p>sendtojoyce630@gmail.com</p>
+                    <p>Copyright &copy; Joyce Website 2019</p>
+                </div>
+            </footer>
+        
+        </div>  <!-- page content #content -->
+    </div>  <!-- #wrapper -->
+
+
+
+    <div class="overlay"></div>
+
+
+    
+
+    <!-- sidebar jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+
+<!-- downloaded Bootstrap core JavaScript-->
+<script src="js/jquery/jquery.min.js"></script>   <!-- 1 -->
+<script src="js/bootstrap/bootstrap.bundle.min.js"></script>  <!-- 2 -->
+
+
+<!-- Plugin JavaScript (important) -->
+<script src="js/jquery-easing/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+
+
+<!-- Custom scripts for this template -->
+<!--<script src="js/grayscale.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-grayscale/5.0.9/js/grayscale.min.js" integrity="sha256-spj4omdr8o22qWojzXHE4yOp3yAxKZWnJGOTypzvvjw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/italyTopo2.js"></script>  <!-- Italy geojson data -->
+<script src="js/VeniceMapChart.js"></script> <!-- 这个要放在italyTopo2 的下面哦...-->
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        // read more button
+        $("#Moretoggle").click(function() {
+            var elem = $("#Moretoggle").text();
+            if (elem == "Read More") {
+            //Stuff to do when btn is in the read more state
+                $("#Moretoggle").text("Read Less");
+                $("#MoreText").slideDown();
+            } else {
+            //Stuff to do when btn is in the read less state
+                $("#Moretoggle").text("Read More");
+                $("#MoreText").slideUp();
+            }
+        });
+    });
+
+</script>
+
+<!-- sidebar -->
+    <script type="text/javascript">
+$(document).ready(function () {
+        /* $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        }); */
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myul");
+        var items = header.getElementsByClassName("sidebarItem");
+
+        $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+
+        // Add active class to the current button (highlight it)   
+        for (var i = 0; i < items.length; i++) {
+            items[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+        }
+
+
+        // change the navBar style on scroll
+       /* var scroll_pos = 0;
+        $(document).scroll(function() { 
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 80) {
+                $("#mainNav").css('background-color', '#fff');
+                //$(".navbar-brand").css('color', 'black');
+            } else {
+                $("#mainNav").css('background-color', 'rgba(0,0,0,0)');
+               // $(".navbar-brand").css('color', '#fff');
+
+            }
+        }); */
+            
+// cityMap button -->
+
+
+});// end ready
+ </script>
+
+
+
+</body>
+
+</html>
