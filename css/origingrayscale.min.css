@@ -116,7 +116,7 @@ a,button,h2,h3,h4,h5,h6{font-family:'EB Garamond',serif}
  /* .startbtn {box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;padding:1rem 2rem;font-family:'Varela Round';font-size:80%;text-transform:uppercase;letter-spacing:.15rem;border:0} */
  .home-intro-section h2{font-size:20px;font-weight:700}
  .home-intro-section p{font-size:14px;color:#f5f5f5}
- .home-intro-section{padding:2rem 1.5rem 0rem 1.5rem;background-color:#ff8c09!important;background:linear-gradient(to bottom,rgba(107, 66, 40, 0.8) 0,rgba(224, 120, 0, 0.8) 10%),url(../img/Italy.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ .home-intro-section{padding:2rem 1.5rem 0rem 1.5rem;background-color:#ff8c09!important;background:linear-gradient(to bottom,rgba(99, 64, 42, 0.8) 0,rgba(224, 120, 0, 0.8) 13%),url(../img/Italy-1.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
   @media(min-width:992px){
     .home-intro-section{padding:6rem 1.5rem 0rem 1.5rem;}}
   @media(min-width:576px){
@@ -210,7 +210,7 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
 
 
  /* index page mymap section */
- .mymap-section{padding:2rem 1.8rem 1rem 1.8rem; background:linear-gradient(to bottom,rgba(225, 118, 17, 0.8) 0,rgba(207, 115, 10, 0.8) 80%,rgb(255, 140, 9)100%),url(../img/bg-masthead6.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+ .mymap-section{padding:2rem 1.8rem 1rem 1.8rem; background:linear-gradient(to bottom,rgba(225, 118, 17, 0.8) 0,rgba(207, 115, 10, 0.8) 80%,rgb(255, 141, 12)95%),url(../img/bg-masthead6.jpg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  .mymap-section h2 {margin: 2rem auto 1rem auto; color: rgb(255, 250, 249);font-size:20px;font-weight: 700;}
  .mymap-section p {color: rgb(255, 250, 249);font-size:14px}
    @media(min-width:576px){
@@ -278,7 +278,7 @@ margin:0; transition: transform .3s ease;} /*make image streatch*/
  .contact-section .social a:hover{color:rgba(255,255,255,.5)} .bg-primary{background-color:#b3ff00!important}
  .contact-section .social a:active{color:#fff}*/
  
- .bg-black{background:linear-gradient(to bottom,rgb(255, 140, 9) 0, rgb(243, 134, 9) 40%)}
+ .bg-black{background:linear-gradient(to bottom,rgb(255, 141, 12) 0, rgb(243, 134, 9) 100%)}
  .text-primary{color:#a16464!important}
   a{color:#f35b00}
 
