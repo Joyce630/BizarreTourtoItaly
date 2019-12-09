@@ -8,7 +8,8 @@ Serving as a <b>guidebook</b></span>, this website offers useful information of 
 <br>Venice: https://joyce630.github.io/BizarreTourtoItaly/BizarreTourtoItaly_Venice.html
 <br>Rome: https://joyce630.github.io/BizarreTourtoItaly/BizarreTourtoItaly_Rome.html
 
-<h3>Here are the final project report and my learning reflection:
+<h3>Reports</h3>
+ Here are the final project report and my learning reflection:
 [Ziqiao_FinalProjectReport.pdf](https://github.com/Joyce630/BizarreTourtoItaly/blob/master/Reports/Ziqiao_FinalProjectReport.pdf)
 <br>
 [Ziqiao_LearningReflection.pdf](https://github.com/Joyce630/BizarreTourtoItaly/blob/master/Reports/Ziqiao_LearningReflection.pdf)
