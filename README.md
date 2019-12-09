@@ -15,4 +15,4 @@ Serving as a <b>guidebook</b></span>, this website offers useful information of 
 
 
 
-[FinalProjectReport](https://github.com/Joyce630/BizarreTourtoItaly/blob/master/Reports/Ziqiao_FinalProjectReport.pdf)
+[Final Project Report](https://github.com/Joyce630/BizarreTourtoItaly/blob/master/Reports/Ziqiao_FinalProjectReport.pdf)
