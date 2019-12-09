@@ -7,8 +7,8 @@ Serving as a <b>guidebook</b></span>, this website offers useful information of 
 <br>Capri: https://joyce630.github.io/BizarreTourtoItaly/BizarreTourtoItaly_Capri.html
 <br>Venice: https://joyce630.github.io/BizarreTourtoItaly/BizarreTourtoItaly_Venice.html
 <br>Rome: https://joyce630.github.io/BizarreTourtoItaly/BizarreTourtoItaly_Rome.html
-<br>
-<h3>Reports</h3>
+
+<br><br><h3>Reports</h3>
  Here are the final project report and my learning reflection:
  
  
