@@ -10,5 +10,5 @@ Serving as a <b>guidebook</b></span>, this website offers useful information of 
 
 <h3>Reports</h3>
  Here are the final project report and my learning reflection:
-<br>[Ziqiao_FinalProjectReport.pdf](https://github.com/Joyce630/BizarreTourtoItaly/blob/master/Reports/Ziqiao_FinalProjectReport.pdf)
-<br>[Ziqiao_LearningReflection.pdf](https://github.com/Joyce630/BizarreTourtoItaly/blob/master/Reports/Ziqiao_LearningReflection.pdf)
+<br>[ZiqiaoFinalProjectReport.pdf](https://github.com/Joyce630/BizarreTourtoItaly/blob/master/Reports/Ziqiao_FinalProjectReport.pdf)
+<br>[ZiqiaoLearningReflection.pdf](https://github.com/Joyce630/BizarreTourtoItaly/blob/master/Reports/Ziqiao_LearningReflection.pdf)
