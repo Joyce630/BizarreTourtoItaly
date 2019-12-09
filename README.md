@@ -13,3 +13,10 @@ Serving as a <b>guidebook</b></span>, this website offers useful information of 
 <br>[ZiqiaoFinalProjectReport.pdf](https://github.com/Joyce630/BizarreTourtoItaly/blob/master/Reports/Ziqiao_FinalProjectReport.pdf)
 <br>[ZiqiaoLearningReflection.pdf](https://github.com/Joyce630/BizarreTourtoItaly/blob/master/Reports/Ziqiao_LearningReflection.pdf)
 <br>[Proposal_Ziqiao_1155128280](https://github.com/Joyce630/joyceassignment.github.io/blob/master/assignment7_MobileFirst/Proposal_Ziqiao_1155128280.pdf)
+Click on this link to view the webpage:<br> https://joyce630.github.io/joyceassignment.github.io/assignment7_MobileFirst/index2.html
+<br>Check the code in:
+<br>[index2.html](https://github.com/Joyce630/joyceassignment.github.io/blob/master/assignment7_MobileFirst/index2.html)
+<br>[grayscale.min.css](https://github.com/Joyce630/joyceassignment.github.io/blob/master/assignment7_MobileFirst/css/grayscale.min.css)
+<br>[chart.js](https://github.com/Joyce630/joyceassignment.github.io/blob/master/assignment7_MobileFirst/chart.js)
+<br>[leaflet5.js](https://github.com/Joyce630/joyceassignment.github.io/blob/master/assignment7_MobileFirst/leafletTest5.js)
+
