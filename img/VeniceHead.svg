@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1558.5 374.38"><defs><style>.cls-1{font-size:330.14px;fill:#ff8c09;font-family:AdobeSongStd-Light-GBpc-EUC-H, Adobe Song Std;}.cls-2,.cls-3{fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;}.cls-2{stroke-width:5px;}.cls-3{stroke-width:3px;}</style></defs><title>VeniceHead</title><g id="text"><text class="cls-1" transform="translate(289.56 290.53)">Venice</text></g><g id="arrow"><path class="cls-2" d="M345.3,141.25H109.8c-1,.56-2.63,1.45-4.5,2.64a74.59,74.59,0,0,0-7,5c-6.54,5.2-32,8.41-32,8.64,0,.53,131.78.36,279,0" transform="translate(-63.8 49.37)"/><path class="cls-3" d="M346.3,141.39a23.1,23.1,0,0,1,2,7.94c0,3.4-2,9.06-2,9.06" transform="translate(-63.8 49.37)"/><path class="cls-2" d="M1517.3,109.55a89,89,0,0,1,35.07-1.13c32.84,5.55,58.93,26.94,67.43,41.44" transform="translate(-63.8 49.37)"/><path class="cls-2" d="M1517.3,190.49c9.48,2.2,21.33,2.5,35.07,1.14,32.93-3.27,59.93-28.27,67.43-41.44" transform="translate(-63.8 49.37)"/><path class="cls-2" d="M1517,110.68l13,19s10.28-1.32,16.28-1.32,12,1,13,5-6,9-8,10-22,0-22,0" transform="translate(-63.8 49.37)"/><path class="cls-2" d="M1517.3,190.36l13-18s9,1,15,1,12-1,13-5-6-9-8-10-22,0-22,0" transform="translate(-63.8 49.37)"/><line class="cls-2" x1="1465.5" y1="192.73" x2="1248.5" y2="192.73"/><line class="cls-2" x1="1465.5" y1="207.73" x2="1248.5" y2="207.73"/><path class="cls-3" d="M1311.3,142.86a38.11,38.11,0,0,1,1,7.5,60.32,60.32,0,0,1-1,8.5" transform="translate(-63.8 49.37)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1558.5 374.38">
+<defs>
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Alegreya|Gelasio|Noto+Serif+TC|Stoke');
+    .cls-1{font-size:330.14px;fill:#ff8c09;font-family:AdobeSongStd-Light-GBpc-EUC-H, Adobe Song Std;}
+    .cls-2,.cls-3{fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;}
+    .cls-2{stroke-width:5px;}
+    .cls-3{stroke-width:3px;}
+</style>
+</defs>
+<title>VeniceHead</title>
+<g id="text">
+    <text class="cls-1" transform="translate(289.56 290.53)" style="text-shadow:2px 2px 4px rgba(0, 0, 0, 0.4);font-family:'Alegreya', serif;">Venice</text>
+</g>
+<g id="arrow">
+    <path class="cls-2" d="M345.3,141.25H109.8c-1,.56-2.63,1.45-4.5,2.64a74.59,74.59,0,0,0-7,5c-6.54,5.2-32,8.41-32,8.64,0,.53,131.78.36,279,0" transform="translate(-63.8 49.37)"/>
+    <path class="cls-3" d="M346.3,141.39a23.1,23.1,0,0,1,2,7.94c0,3.4-2,9.06-2,9.06" transform="translate(-63.8 49.37)"/>
+    <path class="cls-2" d="M1517.3,109.55a89,89,0,0,1,35.07-1.13c32.84,5.55,58.93,26.94,67.43,41.44" transform="translate(-63.8 49.37)"/>
+    <path class="cls-2" d="M1517.3,190.49c9.48,2.2,21.33,2.5,35.07,1.14,32.93-3.27,59.93-28.27,67.43-41.44" transform="translate(-63.8 49.37)"/>
+    <path class="cls-2" d="M1517,110.68l13,19s10.28-1.32,16.28-1.32,12,1,13,5-6,9-8,10-22,0-22,0" transform="translate(-63.8 49.37)"/>
+    <path class="cls-2" d="M1517.3,190.36l13-18s9,1,15,1,12-1,13-5-6-9-8-10-22,0-22,0" transform="translate(-63.8 49.37)"/>
+    <line class="cls-2" x1="1465.5" y1="192.73" x2="1248.5" y2="192.73"/>
+    <line class="cls-2" x1="1465.5" y1="207.73" x2="1248.5" y2="207.73"/>
+    <path class="cls-3" d="M1311.3,142.86a38.11,38.11,0,0,1,1,7.5,60.32,60.32,0,0,1-1,8.5" transform="translate(-63.8 49.37)"/>
+</g>
+</svg>

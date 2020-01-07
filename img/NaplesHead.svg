@@ -3,6 +3,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1593.5 374.4" style="enable-background:new 0 0 1593.5 374.4;" xml:space="preserve">
 <style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Alegreya|Gelasio|Noto+Serif+TC|Stoke');
 	.st0{fill:#FF8C09;}
 	.st1{font-family:'AdobeSongStd-Light-GBpc-EUC-H';}
 	.st2{font-size:330.14px;}
@@ -15,7 +16,7 @@
 <g id="图层_1">
 	<title>NsplesHead</title>
 	<g id="text">
-		<text transform="matrix(1 0 0 1 333.56 290.53)" class="st0 st1 st2">Naples</text>
+		<text transform="matrix(1 0 0 1 333.56 290.53)" class="st0 st1 st2" style="font-family:'Alegreya', serif;">Naples</text>
 	</g>
 </g>
 <g id="图层_2" class="st3">
