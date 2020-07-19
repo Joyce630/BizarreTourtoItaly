@@ -4,7 +4,7 @@ I am a fan of <i>JoJo's Bizarre Adventure</i>, and also this website was inspire
 <br>Serving as a <b>guidebook</b></span>, this website, <b>Bizarre Tour to Italy</b>, offers useful information of destinations and description related to the anime scene, helping you create your "golden experience" to Italy! 
 
 
-<br><br>You can view the website via:
+<br><br>View this website via:
 <br>https://joyce630.github.io/BizarreTourtoItaly/BizarreTourtoItaly_Index.html
 
 <br><br>
