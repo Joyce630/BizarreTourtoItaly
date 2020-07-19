@@ -9,4 +9,4 @@ I am a fan of <i>JoJo's Bizarre Adventure</i>, and also this website was inspire
 
 <br><br>
 <h3>Statement</h3>
-<br>This is a student project for the course COMM5961 of the New Media Programme of the School of Journalism and Communication, CUHK. Feel free to contact me if you have any suggestion: sendtojoyce630@gmail.com
+This is a student project for the course COMM5961 of the New Media Programme of the School of Journalism and Communication, CUHK. Feel free to contact me if you have any suggestion: sendtojoyce630@gmail.com
